@@ -1,0 +1,1802 @@
+<!DOCTYPE html><html><head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script async="" src="https://buttons-config.sharethis.com/js/5a3920a89d192f00137432da.js"></script><script src="https://connect.facebook.net/signals/config/872848339460340?v=2.8.14&amp;r=stable" async=""></script><script src="https://connect.facebook.net/signals/config/179759582624241?v=2.8.14&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0070/3683.js?424062"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-NHSD47"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"42313d7938","applicationID":"10001382","transactionName":"MQYDNxNQXUFUAkJQVghMLDUiHmBbQQRVVksDIA4NFUNcXlkERBZwCAcEGw==","queueTime":1,"applicationTime":253,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgQGV19RGwIAVFFTBAkF"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Scalpel-Si Hi-MOD Black Inc. Cannondale, maker of premium bicycles for race, joy riding, mountain biking and just all-around fun.">
+    <meta name="keywords" content="Scalpel-Si Black Inc, cross country bike, cross country mountain bike, xc mountain bike, MTB, cannondale, carbon, lefty, full suspension">
+    <meta name="author" content="">
+    <title>
+Scalpel-Si Black Inc. | Cannondale Bicycles&nbsp;       </title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon">
+        <link rel="dns-prefetch" href="http://cf-prd.cannondale.com">
+            <link rel="dns-prefetch" href="http://www.cannondale.com">
+    <link rel="dns-prefetch" href="http://www.google-analytics.com">
+    <link rel="dns-prefetch" href="http://connect.facebook.net">
+    <link rel="dns-prefetch" href="http://platform.twitter.com">
+
+    
+    <style type="text/css">
+        @font-face {
+            font-family: 'klavika';
+            src: url('/Static/CSU/fonts/KlavikaWebBasicRegular.woff');
+        }
+
+        @font-face {
+            font-family: klavikaBold;
+            src: url(/Static/CSU/fonts/KlavikaWebBasicBold.woff);
+        }
+
+        @font-face {
+            font-family: 'klavikaMedium';
+            src: url('/Static/CSU/fonts/KlavikaWebBasicMedium.eot');
+            src: url('/Static/CSU/fonts/fonts/KlavikaWebBasicMedium.eot?#iefix') format('embedded-opentype'), url('/Static/CSU/fonts/KlavikaWebBasicMedium.woff') format('font/x-woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    
+        <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+        <link href="/Static/CSU/css/bundle-main.min.css" rel="stylesheet">
+        <script type="text/javascript" src="/Bundles/bundle-main.js"></script>
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+   
+    <script>
+        var Template = {
+            "CommerceBikeTemplateId": '{F53BBD41-427C-4173-A852-1EB04994824A}',
+            "CommerceCategoryTemplateId": '{5A9AAC2C-6346-4E9A-A66C-1D53F31091E8}',
+            "CommerceCategoryTemplateId1": '{325AACDB-1903-4C9D-817F-96D1B90C086B}',
+            "CommerceSubCategoryTemplateId": '{67177465-C95C-4A6A-84C3-4D3FDE141762}',
+            "CommerceFamilyTemplateId": '{22BCF8C1-8BA0-43E1-92D7-3A75E86A761D}',
+            "CommerceGearTemplateId": '{8F64B36F-40DA-4BE4-989D-DE1D9B0F8C17}'
+        };
+        var compareToolLoaded = "0";
+        var RegionHomePath = '/sitecore/content/dorelsports/cannondale/international';
+        var OnlyHomePath = '/international';
+        var currentPageId = '3EC70EBB-5878-4C79-B881-31328FEA3233';
+        var CatalogBikesCategoryId = '';
+    </script>   
+</head>
+
+<body class="en">
+    <noscript>
+	<iframe src ="www.googletagmanager.com/ns.html?id=GTM-NHSD47" height = "0" width= "0" style = "display:none:visibility:hidden"></iframe>        
+    </noscript>
+   <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NHSD47');
+    </script>
+    <div>
+        
+<a id="pageTop"></a>
+<div class="boxWrap headerWrap">
+    <nav class="navbar navbar-default">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+    <a class="navbar-brand logo" href="/en/International">
+<img src="/~/media/Images/Dorel/Cannondale/Common/logo.ashx">    </a>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse pull-right">
+
+                
+
+
+<script type="text/javascript">
+         var productDetailUrlMobile = '/en/International/Products/ProductCategory.aspx' + "?" + 'nid' + "=";
+        var dealerFinderUrl = '';
+        var ProductUrl = {
+        "ProductDetailUrl": '/en/International/Bike/ProductDetail',
+        "ProductGearUrl": '/en/International/Gear/GearDetail',
+        "ProductFamilyUrl": '',
+        "ProductGearUrl": '/en/International/Gear/GearDetail',
+        "ProductWriteReviewUrl": '/en/International/Bike/WriteReview',
+        "ProductGearProductGridUrl": '/en/International/Gear/ProductGrid'
+    };
+    var InnovationUrl = '/en/International/Innovation';
+
+</script>
+
+<script src="/Scripts/CSU/Navigation/MainNavigationMobile.js"></script>
+<script src="/Scripts/CSU/Navigation/TopSiteMenu.js"></script>
+
+<input type="hidden" id="hdnTopMenu" value="[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Road&quot;,&quot;Link&quot;:null,&quot;IsActive&quot;:true,&quot;Flyout&quot;:null,&quot;Column1MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Elite&quot;,&quot;Id&quot;:&quot;132843ea-7f2b-47a3-b038-ba4be2b0753b&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;SuperSix EVO&quot;,&quot;Id&quot;:&quot;6413e715-1975-433d-b96e-563eb9240199&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;CAAD12&quot;,&quot;Id&quot;:&quot;b21321d4-1fae-4ecb-b6d6-38b99f170291&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;CAAD Optimo&quot;,&quot;Id&quot;:&quot;db675a6c-4df1-4540-8cec-2223ff5953ff&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column2MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Endurance&quot;,&quot;Id&quot;:&quot;fb1b4378-5e02-4d06-8080-a6659387805c&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Synapse&quot;,&quot;Id&quot;:&quot;8996e94c-a809-469a-aeb5-dd5ba44eb73c&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Synapse Rim&quot;,&quot;Id&quot;:&quot;ecdedec6-8244-4f6a-9c7e-617653178b3b&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Synapse Alloy&quot;,&quot;Id&quot;:&quot;3935291c-d6e7-45bd-94de-3d91fa04ca64&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column3MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;New Road&quot;,&quot;Id&quot;:&quot;c998cdd9-6761-46e3-9bd2-573450e54dee&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Slate&quot;,&quot;Id&quot;:&quot;9ed12732-bfd6-43b0-b6a2-16e57b1fefea&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;SE Collection&quot;,&quot;Id&quot;:&quot;4fed3793-57eb-4f45-9a0b-db2ad439b7c7&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column4MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Cyclocross&quot;,&quot;Id&quot;:&quot;c9109629-ca62-48f5-a192-daf0f255984a&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;CAADX&quot;,&quot;Id&quot;:&quot;cc238600-0409-4f79-9340-6ab4c91df2bf&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;SuperX&quot;,&quot;Id&quot;:&quot;a5cbde82-8938-4a7d-882d-7b76c8a71129&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column5MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Touring&quot;,&quot;Id&quot;:&quot;a92c466d-ecfe-4b61-b4fd-4bb1644a10c5&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Touring&quot;,&quot;Id&quot;:&quot;d93e7bcb-6ab8-4afd-8eca-d6d43900cc95&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;DisplayName&quot;:&quot;&quot;,&quot;TemplateId&quot;:&quot;c1961cd9-4492-4f50-8e71-8c8cd5033b7a&quot;,&quot;Id&quot;:&quot;7261115a-9677-4da5-a9e8-d188261b5219&quot;,&quot;Url&quot;:&quot;/en/International/Site%20Settings/Navigations/Menu/Main%20Menu/Top%20Level%20Menu%20Items/Road.aspx&quot;},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Mountain&quot;,&quot;Link&quot;:null,&quot;IsActive&quot;:true,&quot;Flyout&quot;:null,&quot;Column1MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Cross Country&quot;,&quot;Id&quot;:&quot;50b6dc03-dbc9-4c25-9b4f-c1a6d7f5b996&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Scalpel-Si&quot;,&quot;Id&quot;:&quot;3cfe9447-598e-41c6-a8b4-5c0fe9196a80&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;F-Si&quot;,&quot;Id&quot;:&quot;9b9aa328-9f08-4fd9-b45e-4b307b72c6f0&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column2MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Enduro&quot;,&quot;Id&quot;:&quot;08ca7f88-7fa7-4729-89e4-0ea4e7ab2142&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Jekyll&quot;,&quot;Id&quot;:&quot;852aef6f-2460-4c09-84d3-f7aba2bb5929&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;All Mountain&quot;,&quot;Id&quot;:&quot;3a3809f5-d52b-4297-ab5b-698b258a62a7&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Trigger&quot;,&quot;Id&quot;:&quot;325352e3-1c59-42d9-9d8c-6ab33c7d14c1&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column3MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Trail&quot;,&quot;Id&quot;:&quot;a3ed64d9-ed9d-45d7-bf56-9d1f3c85d6f5&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Scalpel SE&quot;,&quot;Id&quot;:&quot;4054ef32-470b-4f3f-8787-24db5458753e&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Habit&quot;,&quot;Id&quot;:&quot;aa3c24c1-397f-4cf4-a5c3-11e5fdb6fb4b&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Bad Habit&quot;,&quot;Id&quot;:&quot;5dd0e056-9111-4df9-9af2-812a97f75acc&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column4MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Sport&quot;,&quot;Id&quot;:&quot;a3dec0d0-2de2-4044-80b8-a9599bf23e2b&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Cujo&quot;,&quot;Id&quot;:&quot;f5844e43-290c-4f22-96f8-b9e9435bf78e&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Trail&quot;,&quot;Id&quot;:&quot;27452145-5733-47fa-9358-fd5fe2d12c5c&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Catalyst&quot;,&quot;Id&quot;:&quot;244cfc87-1931-4c3c-8e38-7804eb63da44&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column5MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Fat Bike&quot;,&quot;Id&quot;:&quot;328d3c4e-4a36-4925-9179-63cd92d4ae74&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Fat CAAD&quot;,&quot;Id&quot;:&quot;838b4320-23e0-437b-917f-f6859b0693aa&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;DisplayName&quot;:&quot;&quot;,&quot;TemplateId&quot;:&quot;c1961cd9-4492-4f50-8e71-8c8cd5033b7a&quot;,&quot;Id&quot;:&quot;2a2b07a2-3449-4fce-b458-d42804b08969&quot;,&quot;Url&quot;:&quot;/en/International/Site%20Settings/Navigations/Menu/Main%20Menu/Top%20Level%20Menu%20Items/Mountain.aspx&quot;},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Urban &amp; Fitness&quot;,&quot;Link&quot;:null,&quot;IsActive&quot;:true,&quot;Flyout&quot;:null,&quot;Column1MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Urban&quot;,&quot;Id&quot;:&quot;3674d80a-26d8-4918-b7f9-93e60a157cf6&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Bad Boy&quot;,&quot;Id&quot;:&quot;8f7e3e22-0087-4ed1-97d3-2cff7a706a0f&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Hooligan&quot;,&quot;Id&quot;:&quot;ba24eaeb-68c4-4c3c-9ac8-726ea2991854&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Tesoro&quot;,&quot;Id&quot;:&quot;b802a43e-c533-4a8a-b31a-7ce27ca29181&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column2MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Fitness&quot;,&quot;Id&quot;:&quot;557cfa7f-f6fc-4bb2-ade0-5baf94244db5&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Quick Carbon&quot;,&quot;Id&quot;:&quot;eb9f2bfa-7f66-4386-a580-8812232c8a45&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Quick&quot;,&quot;Id&quot;:&quot;7ea43577-c27c-4ca5-9f97-cec958df35cf&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Quick CX&quot;,&quot;Id&quot;:&quot;b8f3779c-5e45-4782-81f9-c8d345d0c418&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Adventure&quot;,&quot;Id&quot;:&quot;75b670cd-2210-4f6d-97f5-37deff6deace&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column3MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Kids&quot;,&quot;Id&quot;:&quot;8d2c7b15-d51b-410e-82b9-7a4b97117eb8&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Cujo&quot;,&quot;Id&quot;:&quot;f12cead5-c4ad-4b02-a5b4-ee1805ded5c3&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Quick&quot;,&quot;Id&quot;:&quot;30de003f-b1a6-43d8-9694-0fcbe1123341&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Trail&quot;,&quot;Id&quot;:&quot;e1799014-b4b8-44a7-b6d9-40a6f0d622bf&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column4MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Tandem&quot;,&quot;Id&quot;:&quot;de9d6757-e745-4291-8b6c-2f0acce852f7&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Tandem&quot;,&quot;Id&quot;:&quot;3adea033-1abb-4eb8-8329-c858afea7eea&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column5MenuCollection&quot;:[],&quot;DisplayName&quot;:&quot;&quot;,&quot;TemplateId&quot;:&quot;c1961cd9-4492-4f50-8e71-8c8cd5033b7a&quot;,&quot;Id&quot;:&quot;a3049261-afc0-4206-bed1-2a34679a24d4&quot;,&quot;Url&quot;:&quot;/en/International/Site%20Settings/Navigations/Menu/Main%20Menu/Top%20Level%20Menu%20Items/Urban%20and%20Fitness.aspx&quot;},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Electric&quot;,&quot;Link&quot;:null,&quot;IsActive&quot;:true,&quot;Flyout&quot;:null,&quot;Column1MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Mountain&quot;,&quot;Id&quot;:&quot;9e145be2-d929-42c2-8f4f-97a2913e50ba&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Moterra&quot;,&quot;Id&quot;:&quot;6456d081-8971-401e-a080-1fd6369ac20f&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Moterra LT&quot;,&quot;Id&quot;:&quot;13cdb695-2631-4470-b090-d56c2204f3c8&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Moterra SE&quot;,&quot;Id&quot;:&quot;f0a9619d-8d78-4c34-8b51-449198015e30&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Cujo Neo&quot;,&quot;Id&quot;:&quot;169ad5b5-07f8-4061-9851-8b583dc82c7a&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Trail Neo&quot;,&quot;Id&quot;:&quot;d8287617-2973-4d01-be04-ce0620a9f8a8&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column2MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Trekking&quot;,&quot;Id&quot;:&quot;13d14326-3421-42e5-9524-0a94d40dcfba&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Tesoro NEO&quot;,&quot;Id&quot;:&quot;336eca6e-fee1-4bf7-a3f2-f3554628c732&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column3MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Urban&quot;,&quot;Id&quot;:&quot;17cee598-86a5-428d-9bdd-aa8a5b52ab52&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Contro-E&quot;,&quot;Id&quot;:&quot;7b7c3645-1f9c-49a2-a43b-43074e9607d5&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column4MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Sportive Touring&quot;,&quot;Id&quot;:&quot;2669ac64-2f5e-4dc2-b4c6-21b8c72487ce&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Quick Neo&quot;,&quot;Id&quot;:&quot;2cc7f040-b079-4b26-b1a7-8e5d7ee1ecfd&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Mavaro NEO&quot;,&quot;Id&quot;:&quot;e1bcd5ec-47ab-49e7-bace-ec2766cabbe5&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column5MenuCollection&quot;:[],&quot;DisplayName&quot;:&quot;&quot;,&quot;TemplateId&quot;:&quot;c1961cd9-4492-4f50-8e71-8c8cd5033b7a&quot;,&quot;Id&quot;:&quot;0504766e-be32-46b0-8b86-33d09a238b7e&quot;,&quot;Url&quot;:&quot;/en/International/Site%20Settings/Navigations/Menu/Main%20Menu/Top%20Level%20Menu%20Items/E-Bikes.aspx&quot;},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Women's&quot;,&quot;Link&quot;:null,&quot;IsActive&quot;:true,&quot;Flyout&quot;:null,&quot;Column1MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Road&quot;,&quot;Id&quot;:&quot;81d797fe-d5a7-42c9-98d9-e4dc6dce544f&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;SuperSix EVO&quot;,&quot;Id&quot;:&quot;b93417b7-6ec4-4b38-9876-63579525b4a0&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Synapse Carbon&quot;,&quot;Id&quot;:&quot;457110fe-5e9b-49f2-8bf9-06a08b4d4fb4&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Synapse Alloy&quot;,&quot;Id&quot;:&quot;154caefb-8805-449d-a7ef-45d9638a5acf&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;CAAD12&quot;,&quot;Id&quot;:&quot;9448fc68-9646-44f0-befb-33b20528ae59&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column2MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Mountain&quot;,&quot;Id&quot;:&quot;569484b6-d344-46a0-9e75-a1f5dca4c1ce&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Cross Country&quot;,&quot;Id&quot;:&quot;b77e657c-b03d-4be6-8292-bcc0447bf0ed&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Scalpel-Si&quot;,&quot;Id&quot;:&quot;e39feb4e-4d43-4fa8-8df4-f9fb13a8f268&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;F-Si&quot;,&quot;Id&quot;:&quot;7dedd140-ede4-440c-94ff-bfe84f2cd407&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Trail&quot;,&quot;Id&quot;:&quot;634c13a4-dc72-48dc-8fd6-7de71165f753&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Habit&quot;,&quot;Id&quot;:&quot;55cd8bc9-0a76-47e3-834a-43d7dd1ffa34&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;All-Mountain&quot;,&quot;Id&quot;:&quot;725c8b03-0f4b-426d-84ba-329aa9cb0495&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Trigger&quot;,&quot;Id&quot;:&quot;de011c2d-b407-4b31-9b5e-4526298fc9ee&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Sport Hardtail&quot;,&quot;Id&quot;:&quot;2ed8bbc1-9a17-4743-adca-d445b5830c8e&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Scarlet&quot;,&quot;Id&quot;:&quot;53a4725c-5d75-4d7c-a5ee-b081fca2a13f&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Foray&quot;,&quot;Id&quot;:&quot;597e2e15-ed35-45dc-8052-8a2a73b139ca&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Tango&quot;,&quot;Id&quot;:&quot;003e8bc4-6cc6-4b5c-b780-eb50614a1d81&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column3MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Cyclocross&quot;,&quot;Id&quot;:&quot;2804d451-c5ac-42fc-a10c-4653e12fe441&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;CAADX&quot;,&quot;Id&quot;:&quot;a921536e-6b4c-4a28-ba3d-7450b7620763&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;SuperX&quot;,&quot;Id&quot;:&quot;87b19c01-5c7a-42b8-a75f-0f39ec256bd3&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column4MenuCollection&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Fitness&quot;,&quot;Id&quot;:&quot;ac19adf4-ee55-45c5-8911-c2deebb39192&quot;,&quot;ProductSubMenu&quot;:[{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Quick&quot;,&quot;Id&quot;:&quot;f07d1643-b783-449c-b93e-ba56dc7706b2&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Althea&quot;,&quot;Id&quot;:&quot;39e0e777-cf0e-4f67-a448-377f995ba194&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true},{&quot;__interceptors&quot;:[{}],&quot;Name&quot;:&quot;Adventure&quot;,&quot;Id&quot;:&quot;14d66550-726b-4bc7-a3c2-a882fa01759c&quot;,&quot;ProductSubMenu&quot;:[],&quot;IsActive&quot;:true}],&quot;IsActive&quot;:true}],&quot;Column5MenuCollection&quot;:[],&quot;DisplayName&quot;:&quot;&quot;,&quot;TemplateId&quot;:&quot;c1961cd9-4492-4f50-8e71-8c8cd5033b7a&quot;,&quot;Id&quot;:&quot;33824d4f-a721-4b17-9ece-4313e26b8d9b&quot;,&quot;Url&quot;:&quot;/en/International/Site%20Settings/Navigations/Menu/Main%20Menu/Top%20Level%20Menu%20Items/Womens.aspx&quot;}]">
+    <ul id="mainNav" class="mainNav nav navbar-nav navbar-left-new"><li class="nav-link butMobil isParent"><a href="#">Road</a><ul id="7261115a96774da5a9e8d188261b5219Mobile"><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Elite</a><ul id="132843ea7f2b47a3b038ba4be2b0753b-7261115a96774da5a9e8d188261b5219Mobile"><li class="nav-link butMobil" id="6413e715-1975-433d-b96e-563eb9240199"><a href="/en/International/Products/ProductCategory.aspx?nid=6413e715-1975-433d-b96e-563eb9240199">SuperSix EVO</a></li><li class="nav-link butMobil" id="b21321d4-1fae-4ecb-b6d6-38b99f170291"><a href="/en/International/Products/ProductCategory.aspx?nid=b21321d4-1fae-4ecb-b6d6-38b99f170291">CAAD12</a></li><li class="nav-link butMobil" id="db675a6c-4df1-4540-8cec-2223ff5953ff"><a href="/en/International/Products/ProductCategory.aspx?nid=db675a6c-4df1-4540-8cec-2223ff5953ff">CAAD Optimo</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Endurance</a><ul id="fb1b43785e024d068080a6659387805c-7261115a96774da5a9e8d188261b5219Mobile"><li class="nav-link butMobil" id="8996e94c-a809-469a-aeb5-dd5ba44eb73c"><a href="/en/International/Products/ProductCategory.aspx?nid=8996e94c-a809-469a-aeb5-dd5ba44eb73c">Synapse</a></li><li class="nav-link butMobil" id="ecdedec6-8244-4f6a-9c7e-617653178b3b"><a href="/en/International/Products/ProductCategory.aspx?nid=ecdedec6-8244-4f6a-9c7e-617653178b3b">Synapse Rim</a></li><li class="nav-link butMobil" id="3935291c-d6e7-45bd-94de-3d91fa04ca64"><a href="/en/International/Products/ProductCategory.aspx?nid=3935291c-d6e7-45bd-94de-3d91fa04ca64">Synapse Alloy</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">New Road</a><ul id="c998cdd9676146e39bd2573450e54dee-7261115a96774da5a9e8d188261b5219Mobile"><li class="nav-link butMobil" id="9ed12732-bfd6-43b0-b6a2-16e57b1fefea"><a href="/en/International/Products/ProductCategory.aspx?nid=9ed12732-bfd6-43b0-b6a2-16e57b1fefea">Slate</a></li><li class="nav-link butMobil" id="4fed3793-57eb-4f45-9a0b-db2ad439b7c7"><a href="/en/International/Products/ProductCategory.aspx?nid=4fed3793-57eb-4f45-9a0b-db2ad439b7c7">SE Collection</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Cyclocross</a><ul id="c9109629ca6248f5a192daf0f255984a-7261115a96774da5a9e8d188261b5219Mobile"><li class="nav-link butMobil" id="cc238600-0409-4f79-9340-6ab4c91df2bf"><a href="/en/International/Products/ProductCategory.aspx?nid=cc238600-0409-4f79-9340-6ab4c91df2bf">CAADX</a></li><li class="nav-link butMobil" id="a5cbde82-8938-4a7d-882d-7b76c8a71129"><a href="/en/International/Products/ProductCategory.aspx?nid=a5cbde82-8938-4a7d-882d-7b76c8a71129">SuperX</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Touring</a><ul id="a92c466decfe4b61b4fd4bb1644a10c5-7261115a96774da5a9e8d188261b5219Mobile"><li class="nav-link butMobil" id="d93e7bcb-6ab8-4afd-8eca-d6d43900cc95"><a href="/en/International/Products/ProductCategory.aspx?nid=d93e7bcb-6ab8-4afd-8eca-d6d43900cc95">Touring</a></li></ul></li></ul></li><li class="nav-link butMobil isParent"><a href="#">Mountain</a><ul id="2a2b07a234494fceb458d42804b08969Mobile"><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Cross Country</a><ul id="50b6dc03dbc94c259b4fc1a6d7f5b996-2a2b07a234494fceb458d42804b08969Mobile"><li class="nav-link butMobil" id="3cfe9447-598e-41c6-a8b4-5c0fe9196a80"><a href="/en/International/Products/ProductCategory.aspx?nid=3cfe9447-598e-41c6-a8b4-5c0fe9196a80">Scalpel-Si</a></li><li class="nav-link butMobil" id="9b9aa328-9f08-4fd9-b45e-4b307b72c6f0"><a href="/en/International/Products/ProductCategory.aspx?nid=9b9aa328-9f08-4fd9-b45e-4b307b72c6f0">F-Si</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Enduro</a><ul id="08ca7f887fa7472989e40ea4e7ab2142-2a2b07a234494fceb458d42804b08969Mobile"><li class="nav-link butMobil" id="852aef6f-2460-4c09-84d3-f7aba2bb5929"><a href="/en/International/Products/ProductCategory.aspx?nid=852aef6f-2460-4c09-84d3-f7aba2bb5929">Jekyll</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">All Mountain</a><ul id="3a3809f5d52b4297ab5b698b258a62a7-2a2b07a234494fceb458d42804b08969Mobile"><li class="nav-link butMobil" id="325352e3-1c59-42d9-9d8c-6ab33c7d14c1"><a href="/en/International/Products/ProductCategory.aspx?nid=325352e3-1c59-42d9-9d8c-6ab33c7d14c1">Trigger</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Trail</a><ul id="a3ed64d9ed9d45d7bf569d1f3c85d6f5-2a2b07a234494fceb458d42804b08969Mobile"><li class="nav-link butMobil" id="4054ef32-470b-4f3f-8787-24db5458753e"><a href="/en/International/Products/ProductCategory.aspx?nid=4054ef32-470b-4f3f-8787-24db5458753e">Scalpel SE</a></li><li class="nav-link butMobil" id="aa3c24c1-397f-4cf4-a5c3-11e5fdb6fb4b"><a href="/en/International/Products/ProductCategory.aspx?nid=aa3c24c1-397f-4cf4-a5c3-11e5fdb6fb4b">Habit</a></li><li class="nav-link butMobil" id="5dd0e056-9111-4df9-9af2-812a97f75acc"><a href="/en/International/Products/ProductCategory.aspx?nid=5dd0e056-9111-4df9-9af2-812a97f75acc">Bad Habit</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Sport</a><ul id="a3dec0d02de2404480b8a9599bf23e2b-2a2b07a234494fceb458d42804b08969Mobile"><li class="nav-link butMobil" id="f5844e43-290c-4f22-96f8-b9e9435bf78e"><a href="/en/International/Products/ProductCategory.aspx?nid=f5844e43-290c-4f22-96f8-b9e9435bf78e">Cujo</a></li><li class="nav-link butMobil" id="27452145-5733-47fa-9358-fd5fe2d12c5c"><a href="/en/International/Products/ProductCategory.aspx?nid=27452145-5733-47fa-9358-fd5fe2d12c5c">Trail</a></li><li class="nav-link butMobil" id="244cfc87-1931-4c3c-8e38-7804eb63da44"><a href="/en/International/Products/ProductCategory.aspx?nid=244cfc87-1931-4c3c-8e38-7804eb63da44">Catalyst</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Fat Bike</a><ul id="328d3c4e4a364925917963cd92d4ae74-2a2b07a234494fceb458d42804b08969Mobile"><li class="nav-link butMobil" id="838b4320-23e0-437b-917f-f6859b0693aa"><a href="/en/International/Products/ProductCategory.aspx?nid=838b4320-23e0-437b-917f-f6859b0693aa">Fat CAAD</a></li></ul></li></ul></li><li class="nav-link butMobil isParent"><a href="#">Urban &amp; Fitness</a><ul id="a3049261afc04206bed12a34679a24d4Mobile"><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Urban</a><ul id="3674d80a26d84918b7f993e60a157cf6-a3049261afc04206bed12a34679a24d4Mobile"><li class="nav-link butMobil" id="8f7e3e22-0087-4ed1-97d3-2cff7a706a0f"><a href="/en/International/Products/ProductCategory.aspx?nid=8f7e3e22-0087-4ed1-97d3-2cff7a706a0f">Bad Boy</a></li><li class="nav-link butMobil" id="ba24eaeb-68c4-4c3c-9ac8-726ea2991854"><a href="/en/International/Products/ProductCategory.aspx?nid=ba24eaeb-68c4-4c3c-9ac8-726ea2991854">Hooligan</a></li><li class="nav-link butMobil" id="b802a43e-c533-4a8a-b31a-7ce27ca29181"><a href="/en/International/Products/ProductCategory.aspx?nid=b802a43e-c533-4a8a-b31a-7ce27ca29181">Tesoro</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Fitness</a><ul id="557cfa7ff6fc4bb2ade05baf94244db5-a3049261afc04206bed12a34679a24d4Mobile"><li class="nav-link butMobil" id="eb9f2bfa-7f66-4386-a580-8812232c8a45"><a href="/en/International/Products/ProductCategory.aspx?nid=eb9f2bfa-7f66-4386-a580-8812232c8a45">Quick Carbon</a></li><li class="nav-link butMobil" id="7ea43577-c27c-4ca5-9f97-cec958df35cf"><a href="/en/International/Products/ProductCategory.aspx?nid=7ea43577-c27c-4ca5-9f97-cec958df35cf">Quick</a></li><li class="nav-link butMobil" id="b8f3779c-5e45-4782-81f9-c8d345d0c418"><a href="/en/International/Products/ProductCategory.aspx?nid=b8f3779c-5e45-4782-81f9-c8d345d0c418">Quick CX</a></li><li class="nav-link butMobil" id="75b670cd-2210-4f6d-97f5-37deff6deace"><a href="/en/International/Products/ProductCategory.aspx?nid=75b670cd-2210-4f6d-97f5-37deff6deace">Adventure</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Kids</a><ul id="8d2c7b15d51b410e82b97a4b97117eb8-a3049261afc04206bed12a34679a24d4Mobile"><li class="nav-link butMobil" id="f12cead5-c4ad-4b02-a5b4-ee1805ded5c3"><a href="/en/International/Products/ProductCategory.aspx?nid=f12cead5-c4ad-4b02-a5b4-ee1805ded5c3">Cujo</a></li><li class="nav-link butMobil" id="30de003f-b1a6-43d8-9694-0fcbe1123341"><a href="/en/International/Products/ProductCategory.aspx?nid=30de003f-b1a6-43d8-9694-0fcbe1123341">Quick</a></li><li class="nav-link butMobil" id="e1799014-b4b8-44a7-b6d9-40a6f0d622bf"><a href="/en/International/Products/ProductCategory.aspx?nid=e1799014-b4b8-44a7-b6d9-40a6f0d622bf">Trail</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Tandem</a><ul id="de9d6757e74542918b6c2f0acce852f7-a3049261afc04206bed12a34679a24d4Mobile"><li class="nav-link butMobil" id="3adea033-1abb-4eb8-8329-c858afea7eea"><a href="/en/International/Products/ProductCategory.aspx?nid=3adea033-1abb-4eb8-8329-c858afea7eea">Tandem</a></li></ul></li></ul></li><li class="nav-link butMobil isParent"><a href="#">Electric</a><ul id="0504766ebe3246b08b8633d09a238b7eMobile"><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Mountain</a><ul id="9e145be2d92942c28f4f97a2913e50ba-0504766ebe3246b08b8633d09a238b7eMobile"><li class="nav-link butMobil" id="6456d081-8971-401e-a080-1fd6369ac20f"><a href="/en/International/Products/ProductCategory.aspx?nid=6456d081-8971-401e-a080-1fd6369ac20f">Moterra</a></li><li class="nav-link butMobil" id="13cdb695-2631-4470-b090-d56c2204f3c8"><a href="/en/International/Products/ProductCategory.aspx?nid=13cdb695-2631-4470-b090-d56c2204f3c8">Moterra LT</a></li><li class="nav-link butMobil" id="f0a9619d-8d78-4c34-8b51-449198015e30"><a href="/en/International/Products/ProductCategory.aspx?nid=f0a9619d-8d78-4c34-8b51-449198015e30">Moterra SE</a></li><li class="nav-link butMobil" id="169ad5b5-07f8-4061-9851-8b583dc82c7a"><a href="/en/International/Products/ProductCategory.aspx?nid=169ad5b5-07f8-4061-9851-8b583dc82c7a">Cujo Neo</a></li><li class="nav-link butMobil" id="d8287617-2973-4d01-be04-ce0620a9f8a8"><a href="/en/International/Products/ProductCategory.aspx?nid=d8287617-2973-4d01-be04-ce0620a9f8a8">Trail Neo</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Trekking</a><ul id="13d14326342142e595240a94d40dcfba-0504766ebe3246b08b8633d09a238b7eMobile"><li class="nav-link butMobil" id="336eca6e-fee1-4bf7-a3f2-f3554628c732"><a href="/en/International/Products/ProductCategory.aspx?nid=336eca6e-fee1-4bf7-a3f2-f3554628c732">Tesoro NEO</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Urban</a><ul id="17cee59886a5428d9bddaa8a5b52ab52-0504766ebe3246b08b8633d09a238b7eMobile"><li class="nav-link butMobil" id="7b7c3645-1f9c-49a2-a43b-43074e9607d5"><a href="/en/International/Products/ProductCategory.aspx?nid=7b7c3645-1f9c-49a2-a43b-43074e9607d5">Contro-E</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Sportive Touring</a><ul id="2669ac642f5e4dc2b4c621b8c72487ce-0504766ebe3246b08b8633d09a238b7eMobile"><li class="nav-link butMobil" id="2cc7f040-b079-4b26-b1a7-8e5d7ee1ecfd"><a href="/en/International/Products/ProductCategory.aspx?nid=2cc7f040-b079-4b26-b1a7-8e5d7ee1ecfd">Quick Neo</a></li><li class="nav-link butMobil" id="e1bcd5ec-47ab-49e7-bace-ec2766cabbe5"><a href="/en/International/Products/ProductCategory.aspx?nid=e1bcd5ec-47ab-49e7-bace-ec2766cabbe5">Mavaro NEO</a></li></ul></li></ul></li><li class="nav-link butMobil isParent"><a href="#">Women's</a><ul id="33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Road</a><ul id="81d797fed5a742c998d9e4dc6dce544f-33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil" id="b93417b7-6ec4-4b38-9876-63579525b4a0"><a href="/en/International/Products/ProductCategory.aspx?nid=b93417b7-6ec4-4b38-9876-63579525b4a0">SuperSix EVO</a></li><li class="nav-link butMobil" id="457110fe-5e9b-49f2-8bf9-06a08b4d4fb4"><a href="/en/International/Products/ProductCategory.aspx?nid=457110fe-5e9b-49f2-8bf9-06a08b4d4fb4">Synapse Carbon</a></li><li class="nav-link butMobil" id="154caefb-8805-449d-a7ef-45d9638a5acf"><a href="/en/International/Products/ProductCategory.aspx?nid=154caefb-8805-449d-a7ef-45d9638a5acf">Synapse Alloy</a></li><li class="nav-link butMobil" id="9448fc68-9646-44f0-befb-33b20528ae59"><a href="/en/International/Products/ProductCategory.aspx?nid=9448fc68-9646-44f0-befb-33b20528ae59">CAAD12</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Mountain</a><ul id="569484b6d34446a09e75a1f5dca4c1ce-33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Cross Country</a><ul id="b77e657cb03d4be68292bcc0447bf0ed-569484b6d34446a09e75a1f5dca4c1ce-33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil" id="e39feb4e-4d43-4fa8-8df4-f9fb13a8f268"><a href="/en/International/Products/ProductCategory.aspx?nid=e39feb4e-4d43-4fa8-8df4-f9fb13a8f268">Scalpel-Si</a></li><li class="nav-link butMobil" id="7dedd140-ede4-440c-94ff-bfe84f2cd407"><a href="/en/International/Products/ProductCategory.aspx?nid=7dedd140-ede4-440c-94ff-bfe84f2cd407">F-Si</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Trail</a><ul id="634c13a4dc7248dc8fd67de71165f753-569484b6d34446a09e75a1f5dca4c1ce-33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil" id="55cd8bc9-0a76-47e3-834a-43d7dd1ffa34"><a href="/en/International/Products/ProductCategory.aspx?nid=55cd8bc9-0a76-47e3-834a-43d7dd1ffa34">Habit</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">All-Mountain</a><ul id="725c8b030f4b426d84ba329aa9cb0495-569484b6d34446a09e75a1f5dca4c1ce-33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil" id="de011c2d-b407-4b31-9b5e-4526298fc9ee"><a href="/en/International/Products/ProductCategory.aspx?nid=de011c2d-b407-4b31-9b5e-4526298fc9ee">Trigger</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Sport Hardtail</a><ul id="2ed8bbc19a174743adcad445b5830c8e-569484b6d34446a09e75a1f5dca4c1ce-33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil" id="53a4725c-5d75-4d7c-a5ee-b081fca2a13f"><a href="/en/International/Products/ProductCategory.aspx?nid=53a4725c-5d75-4d7c-a5ee-b081fca2a13f">Scarlet</a></li><li class="nav-link butMobil" id="597e2e15-ed35-45dc-8052-8a2a73b139ca"><a href="/en/International/Products/ProductCategory.aspx?nid=597e2e15-ed35-45dc-8052-8a2a73b139ca">Foray</a></li><li class="nav-link butMobil" id="003e8bc4-6cc6-4b5c-b780-eb50614a1d81"><a href="/en/International/Products/ProductCategory.aspx?nid=003e8bc4-6cc6-4b5c-b780-eb50614a1d81">Tango</a></li></ul></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Cyclocross</a><ul id="2804d451c5ac42fca10c4653e12fe441-33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil" id="a921536e-6b4c-4a28-ba3d-7450b7620763"><a href="/en/International/Products/ProductCategory.aspx?nid=a921536e-6b4c-4a28-ba3d-7450b7620763">CAADX</a></li><li class="nav-link butMobil" id="87b19c01-5c7a-42b8-a75f-0f39ec256bd3"><a href="/en/International/Products/ProductCategory.aspx?nid=87b19c01-5c7a-42b8-a75f-0f39ec256bd3">SuperX</a></li></ul></li><li class="nav-link butMobil isParent"><a href="javascript:void(0);">Fitness</a><ul id="ac19adf4ee5545c58911c2deebb39192-33824d4fa7214b179ece4313e26b8d9bMobile"><li class="nav-link butMobil" id="f07d1643-b783-449c-b93e-ba56dc7706b2"><a href="/en/International/Products/ProductCategory.aspx?nid=f07d1643-b783-449c-b93e-ba56dc7706b2">Quick</a></li><li class="nav-link butMobil" id="39e0e777-cf0e-4f67-a448-377f995ba194"><a href="/en/International/Products/ProductCategory.aspx?nid=39e0e777-cf0e-4f67-a448-377f995ba194">Althea</a></li><li class="nav-link butMobil" id="14d66550-726b-4bc7-a3c2-a882fa01759c"><a href="/en/International/Products/ProductCategory.aspx?nid=14d66550-726b-4bc7-a3c2-a882fa01759c">Adventure</a></li></ul></li></ul></li>
+
+
+                    <li>   <a href="http://chronicles.cannondale.com" target="_blank">Chronicles</a></li>
+                    <li>   <a href="/en/International/Innovation.aspx">Innovation</a></li>
+                    <li>   <a href="/en/International/Cannondale-Pro-Teams.aspx">Athletes &amp; Teams</a></li>
+                            <li class="nav-link">
+                                <a href="#" class="ddLink">Support</a>
+                                <div class="ddBox support">
+                                    <a href="#" class="ddClose closePopup"><span></span></a>
+
+
+                                        <div class="searchBox">
+                                            <p><a class="custom-callout" href="Http://dealerlocator.cannondale.com"><img src="/~/media/Images/Dorel/Cannondale/Common/Home/find_your_local_dealer.aspx"></a></p>
+                                        </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 noPosition">
+                                            <h3>owner's resources</h3>
+                                            <ul>
+                                                                    <li> <a href="/en/International/suspension-setup"> Suspension Setup  </a> </li>
+                                                                    <li> <a href="/en/International/Bike%20Reg"> Product Registration  </a> </li>
+                                                                        <li>
+                                                                            <a class="subLink" href="javascript:void(0);">Owners Manuals </a>
+                                                                            <div class="ddSub" style="display: none;">
+                                                                                <a class="ddClose" href="javascript:void(0);"><span></span></a>
+                                                                                <ul>
+                                                                                        <li><a href="/en/International/Support/OwnerManuals/Road">Road</a></li>
+                                                                                        <li><a href="/en/International/Support/OwnerManuals/Mountain">Mountain</a></li>
+                                                                                        <li><a href="/en/International/Support/OwnerManuals/Urban">Rec/Urban</a></li>
+                                                                                        <li><a href="/en/International/Support/OwnerManuals/E-Series">E-Series</a></li>
+                                                                                        <li><a href="/en/International/Support/OwnerManuals/Headshok">Lefty</a></li>
+                                                                                        <li><a href="/en/International/Support/OwnerManuals/Accessories">Accessories</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                    <li> <a href="/en/International/WarrantyInfo"> Warranty Info  </a> </li>
+                                                                    <li> <a href="/en/International/Support/BikeArchive"> Bike Archive  </a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3>support</h3>
+                                            <ul>
+                                                            <li> <a href="http://support.cannondale.com/hc/en-us/requests/new"> Contact Us  </a> </li>
+                                                            <li> <a href="http://support.cannondale.com"> FAQ  </a> </li>
+                                                            <li> <a href="/en/International/Newsletter%20sign%20up"> Newsletter  </a> </li>
+                                                            <li> <a href="/en/International/Safety-Notices-and-Recalls"> Safety Notices &amp; Recalls  </a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                    <li>   <a href="http://dealerlocator.cannondale.com" target="_blank">Find a Dealer</a></li>
+        <li class="nav-link navFooter-searchLang collapse">
+            <form class="navbar-form navbar-right hidden" role="search" action="">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="txtSearchRep" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="searchBtn" id="btnSearchRep" type="button"></button>
+                    </span>
+                </div>
+                <script type="text/javascript">
+                    function IsValidKeywordRep() {
+                        $("#txtSearchRep").val($.trim($("#txtSearchRep").val()));
+                        if ($("#txtSearchRep").val() == "") {
+                            alert("Please enter valid keyword");
+                            $("#txtSearchRep").focus();
+                            return false;
+                        }
+
+                        return true;
+                    }
+                    (function ($) {
+                        $("#btnSearchRep").click(function () {
+                            if (IsValidKeywordRep()) {
+                                window.location.href = RegionHomePath + "/search?q=" + $("#txtSearchRep").val();
+                            }
+                        });
+
+                        $("#txtSearchRep").keypress(function (e) {
+                            if (e.which == 13) {
+                                if (IsValidKeywordRep()) {
+                                    window.location.href = RegionHomePath + "/search?q=" + $("#txtSearchRep").val();
+                                }
+                                return false;
+                            }
+                        });
+                    })(jQuery);
+                </script>
+            </form>
+                <div class="row userOptions">
+                    
+
+    <div class="dropdown regionOption">
+            <button class="ddLink"><span class="regionIcon"></span></button>
+            <div class="ddBox">
+                <h2>Select your region </h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3>North &amp; South America</h3>
+                        <ul>
+
+
+
+    <li>
+        <span class="countryName">USA</span>
+        (
+<a href="/en/USA">English</a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Canada</span>
+        (
+<a href="/en/Canada">English</a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Brazil</span>
+        (
+<a href="/pt-BR/Brazil">Portuguese </a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Latin America</span>
+        (
+<a href="/es-ES/Latin America">Spanish </a>
+
+        )
+    </li>
+                        </ul>
+                        <h3>Europe</h3>
+                        <ul>
+
+
+
+    <li>
+        <span class="countryName">Great Britain</span>
+        (
+<a href="/en/Great Britain">English</a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Europe</span>
+        (
+<a href="/en/Europe">English</a>
+ / <a href="/de-DE/Europe">German </a>
+ / <a href="/fr-FR/Europe">French </a>
+ / <a href="/nl-NL/Europe">Dutch </a>
+ / <a href="/it-IT/Europe">Italian </a>
+ / <a href="/es-ES/Europe">Spanish </a>
+
+        )
+    </li>
+                        </ul>
+                        <h3>Asia Pacific</h3>
+                        <ul>
+
+
+
+    <li>
+        <span class="countryName">Australia</span>
+        (
+<a href="/en/Australia">English</a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Japan</span>
+        (
+<a href="/ja-JP/Japan">Japanese </a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">China</span>
+        (
+<a href="/en/China">English</a>
+
+        )
+    </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>International</h3>
+                        <ul>
+
+
+
+    <li>
+        <span class="countryName">International</span>
+        (
+<a href="/en/International">English</a>
+
+        )
+    </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <div class="dropdown langOption">
+            <button class="ddLink">
+                English
+ <span class="regionName">(International)</span>                  <span class="caret"></span>
+            </button>
+            <div class="ddBox ddMenu">
+                <ul>
+                </ul>
+                <a href="#" class="regionLink">Select your region</a>
+            </div>
+        </div>
+
+
+
+                </div>
+        </li>
+    </ul>
+
+
+
+                <div class="row noMobil userOptions">
+                    
+
+    <div class="dropdown regionOption">
+            <button class="ddLink"><span class="regionIcon"></span></button>
+            <div class="ddBox">
+                <h2>Select your region </h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3>North &amp; South America</h3>
+                        <ul>
+
+
+
+    <li>
+        <span class="countryName">USA</span>
+        (
+<a href="/en/USA">English</a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Canada</span>
+        (
+<a href="/en/Canada">English</a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Brazil</span>
+        (
+<a href="/pt-BR/Brazil">Portuguese </a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Latin America</span>
+        (
+<a href="/es-ES/Latin America">Spanish </a>
+
+        )
+    </li>
+                        </ul>
+                        <h3>Europe</h3>
+                        <ul>
+
+
+
+    <li>
+        <span class="countryName">Great Britain</span>
+        (
+<a href="/en/Great Britain">English</a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Europe</span>
+        (
+<a href="/en/Europe">English</a>
+ / <a href="/de-DE/Europe">German </a>
+ / <a href="/fr-FR/Europe">French </a>
+ / <a href="/nl-NL/Europe">Dutch </a>
+ / <a href="/it-IT/Europe">Italian </a>
+ / <a href="/es-ES/Europe">Spanish </a>
+
+        )
+    </li>
+                        </ul>
+                        <h3>Asia Pacific</h3>
+                        <ul>
+
+
+
+    <li>
+        <span class="countryName">Australia</span>
+        (
+<a href="/en/Australia">English</a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">Japan</span>
+        (
+<a href="/ja-JP/Japan">Japanese </a>
+
+        )
+    </li>
+
+    <li>
+        <span class="countryName">China</span>
+        (
+<a href="/en/China">English</a>
+
+        )
+    </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>International</h3>
+                        <ul>
+
+
+
+    <li>
+        <span class="countryName">International</span>
+        (
+<a href="/en/International">English</a>
+
+        )
+    </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <div class="dropdown langOption">
+            <button class="ddLink">
+                English
+ <span class="regionName">(International)</span>                  <span class="caret"></span>
+            </button>
+            <div class="ddBox ddMenu">
+                <ul>
+                </ul>
+                <a href="#" class="regionLink">Select your region</a>
+            </div>
+        </div>
+
+
+
+                </div>
+
+                
+<form class="navbar-form navbar-right noMobil hidden" role="search">
+    <div class="input-group ui-widget">
+        <input type="text" class="form-control ui-autocomplete-input" id="txtSearch" placeholder="Search for..." autocomplete="off">
+        <span class="input-group-btn">
+            <button class="searchBtn" id="btnSearch" type="button"></button>
+        </span>
+    </div>
+    <script type="text/javascript">
+        function IsValidKeyword() {
+            $("#txtSearch").val($.trim($("#txtSearch").val()));
+            if ($("#txtSearch").val() == "") {
+                alert("Please enter valid keyword");
+                $("#txtSearch").focus();
+                return false;
+            }
+
+            return true;
+        }
+        (function ($) {
+            $("#btnSearch").click(function () {
+                if (IsValidKeyword()) {
+                    window.location.href = OnlyHomePath + "/search?q=" + $("#txtSearch").val();
+                }
+            });
+
+            $("#txtSearch").keypress(function (e) {
+                if (e.which == 13) {
+                    if (IsValidKeyword()) {
+                        window.location.href = OnlyHomePath + "/search?q=" + $("#txtSearch").val();
+                    }
+                    return false;
+                }
+            });
+        })(jQuery);
+
+        $(function () {
+            $("#txtSearch").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        cache: false,
+                        url: "/api/sitecore/productsearch/SearchSuggestions",
+                        dataType: "json",
+                        data: {
+                            q: request.term,
+                            currentItemPath: RegionHomePath
+                        },
+                        success: function (data) {
+                            response(data);
+                        }
+                    });
+                },
+                minLength: 3,
+                select: function (event, ui) {
+                    window.location.href = OnlyHomePath + "/search?q=" + ui.item.label;
+                }
+            });
+
+            //$("#txtSearch").autocomplete({
+            //    source: function (request, response) {
+            //        $.ajax({
+            //            cache:false,
+            //            url: "/api/sitecore/productsearch/SearchSuggestions",
+            //            dataType: "jsonp",
+            //            data: {
+            //                q: request.term,
+            //                currentItemPath: RegionHomePath
+            //            },
+            //            success: function (data) {
+            //                response(data);
+            //            }
+            //        });
+            //    },
+            //    minLength: 3,
+            //    select: function (event, ui) {
+            //        log(ui.item ?
+            //          "Selected: " + ui.item.label :
+            //          "Nothing selected, input was " + this.value);
+            //    },
+            //    open: function () {
+            //        $(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+            //    },
+            //    close: function () {
+            //        $(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+            //    }
+            //});
+        });
+    </script>
+</form>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+<div class="boxWrap">
+    <div class="container">
+        
+<script type="text/javascript">
+    var productTemplateId = 'c1961cd9-4492-4f50-8e71-8c8cd5033b7a';
+    var productDetailUrl = '/en/International/Products/ProductCategory.aspx' + "?" + 'nid' +"=";
+</script>
+<script src="/Scripts/CSU/Navigation/MainNavigation.js"></script>
+
+    <div class="boxWrap new">
+        <div class="container">
+
+            <ul class="topNav" id="topNav">
+                <a class="navbar-brand logo" href="/en/International">
+                    <img src="/~/media/Images/Dorel/Cannondale/Common/logo.png">
+                </a>
+                        <li>
+                            <button type="button" class="ddLink" data-tab="Roadtab">Road</button>
+                            <div class="ddBox">
+                                <div class="row ddGrid">
+                                        <div class="col-xs-2 col20" id="7261115a-9677-4da5-a9e8-d188261b5219-col1">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=132843ea-7f2b-47a3-b038-ba4be2b0753b">Elite</a></h2><ul id="dd7261115a-9677-4da5-a9e8-d188261b5219-col1Elite"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=6413e715-1975-433d-b96e-563eb9240199">SuperSix EVO</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=b21321d4-1fae-4ecb-b6d6-38b99f170291">CAAD12</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=db675a6c-4df1-4540-8cec-2223ff5953ff">CAAD Optimo</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="7261115a-9677-4da5-a9e8-d188261b5219-col2">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=fb1b4378-5e02-4d06-8080-a6659387805c">Endurance</a></h2><ul id="dd7261115a-9677-4da5-a9e8-d188261b5219-col2Endurance"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=8996e94c-a809-469a-aeb5-dd5ba44eb73c">Synapse</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=ecdedec6-8244-4f6a-9c7e-617653178b3b">Synapse Rim</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=3935291c-d6e7-45bd-94de-3d91fa04ca64">Synapse Alloy</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="7261115a-9677-4da5-a9e8-d188261b5219-col3">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=c998cdd9-6761-46e3-9bd2-573450e54dee">New Road</a></h2><ul id="dd7261115a-9677-4da5-a9e8-d188261b5219-col3NewRoad"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=9ed12732-bfd6-43b0-b6a2-16e57b1fefea">Slate</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=4fed3793-57eb-4f45-9a0b-db2ad439b7c7">SE Collection</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="7261115a-9677-4da5-a9e8-d188261b5219-col4">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=c9109629-ca62-48f5-a192-daf0f255984a">Cyclocross</a></h2><ul id="dd7261115a-9677-4da5-a9e8-d188261b5219-col4Cyclocross"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=cc238600-0409-4f79-9340-6ab4c91df2bf">CAADX</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=a5cbde82-8938-4a7d-882d-7b76c8a71129">SuperX</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="7261115a-9677-4da5-a9e8-d188261b5219-col5">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=a92c466d-ecfe-4b61-b4fd-4bb1644a10c5">Touring</a></h2><ul id="dd7261115a-9677-4da5-a9e8-d188261b5219-col5Touring"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=d93e7bcb-6ab8-4afd-8eca-d6d43900cc95">Touring</a></li></ul></li></ul></div>
+                                </div>
+                                <div class="row helpline">
+                                        <div class="ddHelp">
+                                            <div class="col-lg-6">
+                                                <h3><style type="text/css">div.ddHelp{display:none;}</style></h3>
+                                                <p></p>
+                                            </div>
+                                            <div class="col-lg-6 alignRight">
+                                                
+                                            </div>
+                                            <div class="helpBike"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="ddClose">x close</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button" class="ddLink" data-tab="Mountaintab">Mountain</button>
+                            <div class="ddBox">
+                                <div class="row ddGrid">
+                                        <div class="col-xs-2 col20" id="2a2b07a2-3449-4fce-b458-d42804b08969-col1">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=50b6dc03-dbc9-4c25-9b4f-c1a6d7f5b996">Cross Country</a></h2><ul id="dd2a2b07a2-3449-4fce-b458-d42804b08969-col1CrossCountry"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=3cfe9447-598e-41c6-a8b4-5c0fe9196a80">Scalpel-Si</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=9b9aa328-9f08-4fd9-b45e-4b307b72c6f0">F-Si</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="2a2b07a2-3449-4fce-b458-d42804b08969-col2">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=08ca7f88-7fa7-4729-89e4-0ea4e7ab2142">Enduro</a></h2><ul id="dd2a2b07a2-3449-4fce-b458-d42804b08969-col2Enduro"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=852aef6f-2460-4c09-84d3-f7aba2bb5929">Jekyll</a></li></ul></li></ul><h2><a href="/en/International/Products/ProductCategory.aspx?nid=3a3809f5-d52b-4297-ab5b-698b258a62a7">All Mountain</a></h2><ul id="dd2a2b07a2-3449-4fce-b458-d42804b08969-col2AllMountain"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=325352e3-1c59-42d9-9d8c-6ab33c7d14c1">Trigger</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="2a2b07a2-3449-4fce-b458-d42804b08969-col3">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=a3ed64d9-ed9d-45d7-bf56-9d1f3c85d6f5">Trail</a></h2><ul id="dd2a2b07a2-3449-4fce-b458-d42804b08969-col3Trail"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=4054ef32-470b-4f3f-8787-24db5458753e">Scalpel SE</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=aa3c24c1-397f-4cf4-a5c3-11e5fdb6fb4b">Habit</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=5dd0e056-9111-4df9-9af2-812a97f75acc">Bad Habit</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="2a2b07a2-3449-4fce-b458-d42804b08969-col4">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=a3dec0d0-2de2-4044-80b8-a9599bf23e2b">Sport</a></h2><ul id="dd2a2b07a2-3449-4fce-b458-d42804b08969-col4Sport"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=f5844e43-290c-4f22-96f8-b9e9435bf78e">Cujo</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=27452145-5733-47fa-9358-fd5fe2d12c5c">Trail</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=244cfc87-1931-4c3c-8e38-7804eb63da44">Catalyst</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="2a2b07a2-3449-4fce-b458-d42804b08969-col5">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=328d3c4e-4a36-4925-9179-63cd92d4ae74">Fat Bike</a></h2><ul id="dd2a2b07a2-3449-4fce-b458-d42804b08969-col5FatBike"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=838b4320-23e0-437b-917f-f6859b0693aa">Fat CAAD</a></li></ul></li></ul></div>
+                                </div>
+                                <div class="row helpline">
+                                        <div class="ddHelp">
+                                            <div class="col-lg-6">
+                                                <h3><style type="text/css">div.ddHelp{display:none;}</style></h3>
+                                                <p></p>
+                                            </div>
+                                            <div class="col-lg-6 alignRight">
+                                                
+                                            </div>
+                                            <div class="helpBike"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="ddClose">x close</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button" class="ddLink" data-tab="Urban &amp; Fitnesstab">Urban &amp; Fitness</button>
+                            <div class="ddBox">
+                                <div class="row ddGrid">
+                                        <div class="col-xs-2 col20" id="a3049261-afc0-4206-bed1-2a34679a24d4-col1">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=3674d80a-26d8-4918-b7f9-93e60a157cf6">Urban</a></h2><ul id="dda3049261-afc0-4206-bed1-2a34679a24d4-col1Urban"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=8f7e3e22-0087-4ed1-97d3-2cff7a706a0f">Bad Boy</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=ba24eaeb-68c4-4c3c-9ac8-726ea2991854">Hooligan</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=b802a43e-c533-4a8a-b31a-7ce27ca29181">Tesoro</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="a3049261-afc0-4206-bed1-2a34679a24d4-col2">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=557cfa7f-f6fc-4bb2-ade0-5baf94244db5">Fitness</a></h2><ul id="dda3049261-afc0-4206-bed1-2a34679a24d4-col2Fitness"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=eb9f2bfa-7f66-4386-a580-8812232c8a45">Quick Carbon</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=7ea43577-c27c-4ca5-9f97-cec958df35cf">Quick</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=b8f3779c-5e45-4782-81f9-c8d345d0c418">Quick CX</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=75b670cd-2210-4f6d-97f5-37deff6deace">Adventure</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="a3049261-afc0-4206-bed1-2a34679a24d4-col3">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=8d2c7b15-d51b-410e-82b9-7a4b97117eb8">Kids</a></h2><ul id="dda3049261-afc0-4206-bed1-2a34679a24d4-col3Kids"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=f12cead5-c4ad-4b02-a5b4-ee1805ded5c3">Cujo</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=30de003f-b1a6-43d8-9694-0fcbe1123341">Quick</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=e1799014-b4b8-44a7-b6d9-40a6f0d622bf">Trail</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="a3049261-afc0-4206-bed1-2a34679a24d4-col4">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=de9d6757-e745-4291-8b6c-2f0acce852f7">Tandem</a></h2><ul id="dda3049261-afc0-4206-bed1-2a34679a24d4-col4Tandem"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=3adea033-1abb-4eb8-8329-c858afea7eea">Tandem</a></li></ul></li></ul></div>
+                                                                    </div>
+                                <div class="row helpline">
+                                        <div class="ddHelp">
+                                            <div class="col-lg-6">
+                                                <h3><style type="text/css">div.ddHelp{display:none;}</style></h3>
+                                                <p></p>
+                                            </div>
+                                            <div class="col-lg-6 alignRight">
+                                                
+                                            </div>
+                                            <div class="helpBike"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="ddClose">x close</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button" class="ddLink" data-tab="Electrictab">Electric</button>
+                            <div class="ddBox">
+                                <div class="row ddGrid">
+                                        <div class="col-xs-2 col20" id="0504766e-be32-46b0-8b86-33d09a238b7e-col1">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=9e145be2-d929-42c2-8f4f-97a2913e50ba">Mountain</a></h2><ul id="dd0504766e-be32-46b0-8b86-33d09a238b7e-col1Mountain"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=6456d081-8971-401e-a080-1fd6369ac20f">Moterra</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=13cdb695-2631-4470-b090-d56c2204f3c8">Moterra LT</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=f0a9619d-8d78-4c34-8b51-449198015e30">Moterra SE</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=169ad5b5-07f8-4061-9851-8b583dc82c7a">Cujo Neo</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=d8287617-2973-4d01-be04-ce0620a9f8a8">Trail Neo</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="0504766e-be32-46b0-8b86-33d09a238b7e-col2">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=13d14326-3421-42e5-9524-0a94d40dcfba">Trekking</a></h2><ul id="dd0504766e-be32-46b0-8b86-33d09a238b7e-col2Trekking"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=336eca6e-fee1-4bf7-a3f2-f3554628c732">Tesoro NEO</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="0504766e-be32-46b0-8b86-33d09a238b7e-col3">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=17cee598-86a5-428d-9bdd-aa8a5b52ab52">Urban</a></h2><ul id="dd0504766e-be32-46b0-8b86-33d09a238b7e-col3Urban"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=7b7c3645-1f9c-49a2-a43b-43074e9607d5">Contro-E</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="0504766e-be32-46b0-8b86-33d09a238b7e-col4">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=2669ac64-2f5e-4dc2-b4c6-21b8c72487ce">Sportive Touring</a></h2><ul id="dd0504766e-be32-46b0-8b86-33d09a238b7e-col4SportiveTouring"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=2cc7f040-b079-4b26-b1a7-8e5d7ee1ecfd">Quick Neo</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=e1bcd5ec-47ab-49e7-bace-ec2766cabbe5">Mavaro NEO</a></li></ul></li></ul></div>
+                                                                    </div>
+                                <div class="row helpline">
+                                        <div class="ddHelp">
+                                            <div class="col-lg-6">
+                                                <h3><style type="text/css">div.ddHelp{display:none;}</style></h3>
+                                                <p></p>
+                                            </div>
+                                            <div class="col-lg-6 alignRight">
+                                                
+                                            </div>
+                                            <div class="helpBike"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="ddClose">x close</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="button" class="ddLink" data-tab="Women'stab">Women's</button>
+                            <div class="ddBox">
+                                <div class="row ddGrid">
+                                        <div class="col-xs-2 col20" id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col1">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=81d797fe-d5a7-42c9-98d9-e4dc6dce544f">Road</a></h2><ul id="dd33824d4f-a721-4b17-9ece-4313e26b8d9b-col1Road"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=b93417b7-6ec4-4b38-9876-63579525b4a0">SuperSix EVO</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=457110fe-5e9b-49f2-8bf9-06a08b4d4fb4">Synapse Carbon</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=154caefb-8805-449d-a7ef-45d9638a5acf">Synapse Alloy</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=9448fc68-9646-44f0-befb-33b20528ae59">CAAD12</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col2">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=569484b6-d344-46a0-9e75-a1f5dca4c1ce">Mountain</a></h2><ul id="dd33824d4f-a721-4b17-9ece-4313e26b8d9b-col2Mountain"><li id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col2b77e657cb03d4be68292bcc0447bf0ed-0-0-0"><a href="/en/International/Products/ProductCategory.aspx?nid=b77e657c-b03d-4be6-8292-bcc0447bf0ed">Cross Country</a><ul id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col2b77e657cb03d4be68292bcc0447bf0ed-0-0-0-ul"><li><a href="/en/International/Products/ProductCategory.aspx?nid=e39feb4e-4d43-4fa8-8df4-f9fb13a8f268">Scalpel-Si</a></li><li><a href="/en/International/Products/ProductCategory.aspx?nid=7dedd140-ede4-440c-94ff-bfe84f2cd407">F-Si</a></li></ul></li><li id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col2634c13a4dc7248dc8fd67de71165f753-0-0-1"><a href="/en/International/Products/ProductCategory.aspx?nid=634c13a4-dc72-48dc-8fd6-7de71165f753">Trail</a><ul id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col2634c13a4dc7248dc8fd67de71165f753-0-0-1-ul"><li><a href="/en/International/Products/ProductCategory.aspx?nid=55cd8bc9-0a76-47e3-834a-43d7dd1ffa34">Habit</a></li></ul></li><li id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col2725c8b030f4b426d84ba329aa9cb0495-0-0-2"><a href="/en/International/Products/ProductCategory.aspx?nid=725c8b03-0f4b-426d-84ba-329aa9cb0495">All-Mountain</a><ul id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col2725c8b030f4b426d84ba329aa9cb0495-0-0-2-ul"><li><a href="/en/International/Products/ProductCategory.aspx?nid=de011c2d-b407-4b31-9b5e-4526298fc9ee">Trigger</a></li></ul></li><li id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col22ed8bbc19a174743adcad445b5830c8e-0-0-3"><a href="/en/International/Products/ProductCategory.aspx?nid=2ed8bbc1-9a17-4743-adca-d445b5830c8e">Sport Hardtail</a><ul id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col22ed8bbc19a174743adcad445b5830c8e-0-0-3-ul"><li><a href="/en/International/Products/ProductCategory.aspx?nid=53a4725c-5d75-4d7c-a5ee-b081fca2a13f">Scarlet</a></li><li><a href="/en/International/Products/ProductCategory.aspx?nid=597e2e15-ed35-45dc-8052-8a2a73b139ca">Foray</a></li><li><a href="/en/International/Products/ProductCategory.aspx?nid=003e8bc4-6cc6-4b5c-b780-eb50614a1d81">Tango</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col3">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=2804d451-c5ac-42fc-a10c-4653e12fe441">Cyclocross</a></h2><ul id="dd33824d4f-a721-4b17-9ece-4313e26b8d9b-col3Cyclocross"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=a921536e-6b4c-4a28-ba3d-7450b7620763">CAADX</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=87b19c01-5c7a-42b8-a75f-0f39ec256bd3">SuperX</a></li></ul></li></ul></div>
+                                                                            <div class="col-xs-2 col20" id="33824d4f-a721-4b17-9ece-4313e26b8d9b-col4">
+                                        <h2><a href="/en/International/Products/ProductCategory.aspx?nid=ac19adf4-ee55-45c5-8911-c2deebb39192">Fitness</a></h2><ul id="dd33824d4f-a721-4b17-9ece-4313e26b8d9b-col4Fitness"><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=f07d1643-b783-449c-b93e-ba56dc7706b2">Quick</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=39e0e777-cf0e-4f67-a448-377f995ba194">Althea</a></li></ul></li><li class="custom-nav"><ul><li><a href="/en/International/Products/ProductCategory.aspx?nid=14d66550-726b-4bc7-a3c2-a882fa01759c">Adventure</a></li></ul></li></ul></div>
+                                                                    </div>
+                                <div class="row helpline">
+                                        <div class="ddHelp">
+                                            <div class="col-lg-6">
+                                                <h3><style type="text/css">div.ddHelp{display:none;}</style></h3>
+                                                <p></p>
+                                            </div>
+                                            <div class="col-lg-6 alignRight">
+                                                
+                                            </div>
+                                            <div class="helpBike"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="ddClose">x close</a>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="">
+            <ol class="breadcrumb">
+
+                                        <li class="open-page"><a href="/en/International">Home</a></li>
+                                        <li class="flyout" data-target="Biketab">Bike</li>
+                                        <li class="no-flyout"><a href="/en/International/Products/ProductCategory.aspx?nid=7b633214-6324-4946-8305-e292d0b186c5">Mountain</a></li>
+                                            <li class="no-flyout"><a href="/en/International/Products/ProductCategory.aspx?nid=50b6dc03-dbc9-4c25-9b4f-c1a6d7f5b996">Cross Country</a></li>
+                                                <li class="no-flyout"><a href="/en/International/Products/ProductCategory.aspx?nid=3cfe9447-598e-41c6-a8b4-5c0fe9196a80">Scalpel-Si</a></li>
+            </ol>
+
+        </div>
+    </div>
+
+        <div class="row subNav borderBottom">
+            <div class="pull-left">
+                <h1 class="txtBlu">
+Scalpel-Si Hi-MOD Black Inc.</h1>
+            </div>
+            
+            <div class="borderDn"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <div class="boxWrap">
+        <div class="container heroBox">
+            
+            <div class="row productSlide paddingLeft paddingRight">
+
+
+
+
+
+
+
+                    <div class=" slideImg active" data-color="black">
+                        
+
+                            <div class="threesixty active" data-path="/~/media/Images/Dorel/Cannondale/Common/MY18%20Bikes/Mountain/C18_C24106M_BLE.ashx?mw=950" data-alt="Scalpel-Si Black Inc, cross country bike, cross country mountain bike, xc mountain bike, MTB, cannondale, carbon, lefty, full suspension" data-count="1"><img class="threesixty-frame" style="display:inline-block;" data-index="1" src="/~/media/Images/Dorel/Cannondale/Common/MY18%20Bikes/Mountain/C18_C24106M_BLE.ashx?mw=950" alt="Scalpel-Si Black Inc, cross country bike, cross country mountain bike, xc mountain bike, MTB, cannondale, carbon, lefty, full suspension"></div>
+
+                    </div>
+
+            </div>
+
+            <div class="view360"></div>
+            
+            <div class="row borderBottom paddingLeft paddingBottom paddingTop noPrint">
+                <div class="col-lg-6 pull-right">
+
+
+                        <div class=" jcarousel-wrapper product-thumbnail active" data-color="black">
+                            <div class="jcarousel" data-jcarousel="true">
+                                <ul class="thumbs" style="left: 0px; top: 0px;">
+
+
+                                        <li class=" active" data-count="0">
+
+                                            <img src="/~/media/Images/Dorel/Cannondale/Common/MY18%20Bikes/Mountain/C18_C24106M_BLE.ashx" alt="Scalpel-Si Black Inc, cross country bike, cross country mountain bike, xc mountain bike, MTB, cannondale, carbon, lefty, full suspension">
+                                        </li>
+
+                                    
+                                </ul>
+
+
+
+
+
+
+                            </div>
+                            <div class="jcarousel-control-prev disabled" data-jcarouselcontrol="true"></div>
+                            <div class="jcarousel-control-next disabled" data-jcarouselcontrol="true"></div>
+                        </div>
+                </div>
+                <div class="col-lg-6 pull-left">
+                    <div class="awardBox">
+                        
+                        <div class="details">
+                            <p class="alert"></p>
+                            <p class="highLight"></p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <h2>
+                        BUILT FOR XXC
+                    </h2>
+                    <div class="col-lg-12 pull-left bikeDescription">
+                        Kill on the ups and thrill on the downs with the class-dominating weight and stiffness, mountain goat traction and insanely confident handling of the world's best XC race machine. Welcome to XXC.
+                    </div>
+                </div>
+            </div>
+
+            <ul class="productInfo">
+                <li class="colors toolBox">
+                        <a href="#" class="toggleNav noChild">
+                            <span>
+                                <img src="/~/media/Images/Dorel/Cannondale/Common/Products/Color/bbq.ashx">
+                            </span>Black
+                        </a>
+                    <div class="color-names">
+                        <ul>
+                                <li style="display:none;">
+                                    <a id="" href="#" data-color="black" data-price="$0">
+                                        <span><img src="/~/media/Images/Dorel/Cannondale/Common/Products/Color/bbq.ashx"></span>
+                                        Black
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </li>
+              
+
+              <!-- Commenting follwoing code to disable compare product functionality 
+              --- End of commenting -->
+            
+
+                
+                    <li class="find">
+                        <a href="http://dealerlocator.cannondale.com/" target="New Browser" title="Find Dealer">Find Dealer</a>
+                    </li>
+                
+                <li class="find">
+                    
+                </li>
+            </ul>
+
+
+
+            <div class="butPrev" style="display: none;"></div>
+            <div class="butNext" style="display: none;"></div>
+
+            <input type="hidden" id="hdVariantId" value="">
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="boxWrap">
+        <div class="container">
+            <div class="row paddingLeft paddingRight">
+                <h2 class="dataHead">Specifications</h2>
+            </div>
+            
+            <a id="anchorComponent"></a>
+            <div class="row paddingLeft paddingRight">
+                <h3 class="dataSubhead">Component Overview</h3>
+            </div>
+            <div class="row paddingLeft paddingRight">
+
+
+
+                    <div class="col-lg-2 displayBox-sm alignCenter ">
+                        <p class="alignCenter imageBox-sm">
+                            <img src="/~/media/Images/Dorel/Cannondale/Global/2017-icons/FORK_ROAD.ashx?mw=100&amp;mh=100">
+                        </p>
+                        <div class="textBox-sm">
+                            <h4>Fork</h4>
+                            <p>
+                                Lefty 2.0 Carbon, 2Spring, XLR Full Sprint, 100mm Travel
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 displayBox-sm alignCenter ">
+                        <p class="alignCenter imageBox-sm">
+                            <img src="/~/media/Images/Dorel/Cannondale/Global/2017-icons/DRIVETRAIN.ashx?mw=100&amp;mh=100">
+                        </p>
+                        <div class="textBox-sm">
+                            <h4>DriveTrain</h4>
+                            <p>
+                                Shimano XTR Di2 Group
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 displayBox-sm alignCenter ">
+                        <p class="alignCenter imageBox-sm">
+                            <img src="/~/media/Images/Dorel/Cannondale/Global/2017-icons/SUSPENSION.ashx?mw=100&amp;mh=100">
+                        </p>
+                        <div class="textBox-sm">
+                            <h4>Suspension</h4>
+                            <p>
+                                RockShox Monarch XX, 100mm Travel
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 displayBox-sm alignCenter ">
+                        <p class="alignCenter imageBox-sm">
+                            <img src="/~/media/Images/Dorel/Cannondale/Global/2017-icons/BRAKES_DISC.ashx?mw=100&amp;mh=100">
+                        </p>
+                        <div class="textBox-sm">
+                            <h4>Brakes</h4>
+                            <p>
+                                Shimano XTR Race Hydro Disc
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-2 displayBox-sm alignCenter ">
+                        <p class="alignCenter imageBox-sm">
+                            <img src="/~/media/Images/Dorel/Cannondale/Global/2017-icons/FRAME_ROAD.ashx?mw=100&amp;mh=100">
+                        </p>
+                        <div class="textBox-sm">
+                            <h4>Frame</h4>
+                            <p>
+                                Scalpel-Si, Hi-Mod BallisTec Carbon, Ai Offset
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 displayBox-sm alignCenter ">
+                        <p class="alignCenter imageBox-sm">
+                            <img src="/~/media/Images/Dorel/Cannondale/Global/2017-icons/WHEEL_SET.ashx?mw=100&amp;mh=100">
+                        </p>
+                        <div class="textBox-sm">
+                            <h4>Wheelset</h4>
+                            <p>
+                                ENVE Carbon M50 Rims / Lefty 60 and Chris King Hubs
+                            </p>
+                        </div>
+                    </div>
+</div><div class="row paddingLeft paddingRight">
+
+
+
+
+
+
+
+
+
+
+                <div class="col-lg-2 displayBox-sm alignCenter ">
+                    <p class="alignCenter imageBox-sm">
+                        <img src="/~/media/Images/Dorel/Cannondale/Common/Products/Features/EXTRAS.ashx?mw=100&amp;mh=100" alt="Extras">
+                    </p>
+                    <div class="textBox-sm">
+                        <h4>Extras</h4>
+                        <p>
+                            Tubeless Kit
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="row ddSection" id="componentBox">
+
+                <div class="overview">
+
+                        <div class="cell">
+                            <h4>Frame</h4>
+                            <p>
+                                Scalpel-Si, 100mm, BallisTec Hi-MOD Carbon, Zero Pivot seatstay, Carbon Link, PF30, 1.5 Si head tube, Ai Offset
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Fork</h4>
+                            <p>
+                                Lefty 2.0 Carbon, 2Spring, 100mm, XLR Isolated Damper Technology with XC+ tune and XLoc Full Sprint remote, 55mm offset (29), 50mm offset (27.5)
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Rear Shock</h4>
+                            <p>
+                                RockShox Monarch XX, 100mm, Full Sprint remote
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Rims</h4>
+                            <p>
+                                ENVE Carbon M50, Tubeless Ready,28h
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Hubs</h4>
+                            <p>
+                                Lefty 60 front, Chris King ISO rear, 142x12, 28 hole (Ai Offset dish - Rear)
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Spokes</h4>
+                            <p>
+                                DT Swiss AeroLite (Ai Offset dish - Rear)
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Tires</h4>
+                            <p>
+                                Schwalbe Racing Ralph EVO Snakeskin, 29x2.25", folding, Tubeless Ready
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Pedals</h4>
+                            <p>
+                                Not included
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Crank</h4>
+                            <p>
+                                Cannondale HollowGram SiSL2, BB30, 26/36 Praxis chainrings
+                            </p>
+                        </div>
+
+
+                        <div class="cell">
+                            <h4>Bottom Bracket</h4>
+                            <p>
+                                Cannondale Alloy PressFit30
+                            </p>
+                        </div>
+
+
+                        <div class="cell">
+                            <h4>Chain</h4>
+                            <p>
+                                Shimano HG901, 11-speed
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Rear Cogs</h4>
+                            <p>
+                                Shimano XTR, 11-40, 11-speed
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Front Derailleur</h4>
+                            <p>
+                                Shimano XTR Di2, direct mount, 2x
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Rear Derailleur</h4>
+                            <p>
+                                Shimano XTR Di2, 11-speed
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Shifters</h4>
+                            <p>
+                                Shimano XTR Di2, 2x11
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Handlebar</h4>
+                            <p>
+                                ENVE Carbon Sweep, flat, 740mm
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Grips</h4>
+                            <p>
+                                Cannondale Locking Grips
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Stem</h4>
+                            <p>
+                                Cannondale C1, 6061 Alloy, 1.5", 31.8, -5 deg.
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Headset</h4>
+                            <p>
+                                Cannondale HeadShok Si
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Brakes</h4>
+                            <p>
+                                Shimano XTR Race, 160/160mm, Ice Tech Rotors
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Brake Levers</h4>
+                            <p>
+                                Shimano XTR Race, carbon lever
+                            </p>
+                        </div>
+
+
+
+                        <div class="cell">
+                            <h4>Saddle</h4>
+                            <p>
+                                Prologo Zero II CPC Nack Carbon
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Seatpost</h4>
+                            <p>
+                                ENVE Carbon, Di2 compatible, 31.6x400mm
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4>Sizes</h4>
+                            <p>
+                                S (27.5") M, L, XL (29")
+                            </p>
+                        </div>
+
+
+
+
+
+
+
+
+                                    </div>
+            </div>
+            <div class="row borderBottom paddingLeft">
+                <button class="butClose ddLink" id="ddComponentLink"><span class="openText">Close</span><span class="closeText">View All Components</span></button>
+            </div>
+            <a id="anchorInnotech"></a>
+
+            <div class="row borderBottom" id="specsClosed">
+                <div class="col-lg-6 paddingLeft">
+                    <div class="row">
+                        <h3 class="dataSubhead">Innovation AND Technology</h3>
+                    </div>
+                    <div class="row  specsMin">
+                            <ul>
+                                                                        <li>
+                                            Clean Cable Management
+                                        </li>
+                                        <li>
+                                            INTEGRATED DI2 BATTERY HOUSING
+                                        </li>
+                                        <li>
+                                            MODERN XC GEOMETRY
+                                        </li>
+                                        <li>
+                                            Ultralight Carbon Link
+                                        </li>
+                            </ul>
+                    </div>
+                    <div class="row">
+                        <button class="butClose ddLink openSpecs" id="innotechLink">View Innovation AND Technology Details</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 paddingRight">
+                    <div class="row">
+                        <h3 class="dataSubhead">Rider Position / Bike Geometry</h3>
+                    </div>
+                        <div class="row specsMin">
+                            <div class="col-lg-8">
+                                <h4></h4>
+                                <p></p><p> Pure Modern XC. Low flat back, centered weight distribution.</p><p></p>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="/~/media/Images/Dorel/Cannondale/Common/Products/Rider%20Position/mt-xc.ashx" class="fullWid" alt="xc-mountain">
+                            </div>
+                        </div>
+                    <div class="row">
+                        <button class="butClose ddLink openSpecs" id="riderLink">View Geometry</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="specsOpen" class="ddSection">
+                <div id="innotechBox">
+                    <div class="ddBox" id="ddInfo">
+                        <a href="#" class="ddClose"><span></span></a>
+                        <img src="">
+                        <h4></h4>
+                        <div></div>
+                        <p class="pageDetailLink"><a class="butWell butBlk" href="#" role="button"><span class="itemName"></span></a></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="pull-left paddingLeft">
+                            <h3 class="dataSubhead">Innovation AND Technology</h3>
+                        </div>
+                        <div class="pull-right paddingRight">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                        <div class="row borderBottom infoGrid owl-carousel-pdp owl-theme tech-callout owl-loaded owl-drag">
+                                                                
+                                    
+                                    
+                                    
+                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s;"><div class="owl-item"><div class="infoCell">
+                                        <h4>Clean Cable Management<span class="techSD"><div class="features-carousel-pdp"></div> <style> .owl-carousel-pdp,.owl-carousel-pdp .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel-pdp{display:none;width:100%;z-index:1}.owl-carousel-pdp .owl-stage{position:relative;-ms-touch-action:pan-Y;-moz-backface-visibility:hidden}.owl-carousel-pdp .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel-pdp .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel-pdp .owl-item,.owl-carousel-pdp .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel-pdp .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel-pdp .owl-item img{display:block;width:100%}.owl-carousel-pdp .owl-dots.disabled,.owl-carousel-pdp .owl-nav.disabled{display:none}.no-js .owl-carousel-pdp,.owl-carousel-pdp.owl-loaded{display:block}.owl-carousel-pdp .owl-dot,.owl-carousel-pdp .owl-nav .owl-next,.owl-carousel-pdp .owl-nav .owl-prev{cursor:pointer;cursor:hand;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel-pdp.owl-loading{opacity:0;display:block}.owl-carousel-pdp.owl-hidden{opacity:0}.owl-carousel-pdp.owl-refresh .owl-item{visibility:hidden}.owl-carousel-pdp.owl-drag .owl-item{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel-pdp.owl-grab{cursor:move;cursor:grab}.owl-carousel-pdp.owl-rtl{direction:rtl}.owl-carousel-pdp.owl-rtl .owl-item{float:right}.owl-carousel-pdp .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel-pdp .owl-animated-in{z-index:0}.owl-carousel-pdp .owl-animated-out{z-index:1}.owl-carousel-pdp .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel-pdp .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel-pdp .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel-pdp .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel-pdp .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel-pdp .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel-pdp .owl-video-playing .owl-video-play-icon,.owl-carousel-pdp .owl-video-playing .owl-video-tn{display:none}.owl-carousel-pdp .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel-pdp .owl-video-frame{position:relative;z-index:1;height:100%;width:100%} .owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791} </style> <style> .owl-carousel-pdp{ 	margin-right: 0px !important; 	margin-left: 0px !important; } .owl-item {   color: white;   text-align: center;   padding-top: 0px !important;   padding-bottom: 0px !important; } .owl-item .infoCell{ 	width: 100% !important; 	padding: 0px !important; } .owl-item .infoCell h4{ 	color: #FFF; 	background-color: #7b0; 	width: 100%; 	margin: 0px !important; 	padding: 3%; 	text-align: center; } .owl-item .infoCell div.paddingTop10{ 	width: 100%; 	color: black; } .owl-item img{ 	width: 100%; 	height: auto; } .owl-prev {   float: left;   font-size: 20px;   text-transform: uppercase;   padding: 20px; }  .owl-next {   float: right;   text-transform: uppercase;   padding: 20px; }  .owl-next, .owl-prev{ 	border-radius: 50%; 	background-color: #7b0 !important; 	color: black; 	font-weight: bold; }  .owl-carousel-pdp .owl-dots {   counter-reset: slides-num;   /* Initialize counter. */   position: absolute;   top: 100%;   left: 45%;   margin-top: -30px;   color: #000; } .owl-carousel-pdp .owl-dots:after {   content: counter(slides-num);   /* get total number of items - more info on http://www.sitepoint.com/a-little-known-way-to-replace-some-scripts-with-css-counters/ */   display: inline-block;   font-size: 20px;   font-weight: 700;   vertical-align: middle;   padding-left: 5px;   color: #000; }  .owl-carousel-pdp .owl-dot {   display: inline-block;   counter-increment: slides-num;   /* Increment counter */ } .owl-carousel-pdp .owl-dot span {   display: none !important; } .owl-carousel-pdp .owl-dot.active:before {   content: counter(slides-num) " of";   /* Use the same counter to get current item. */   display: inline-block;   vertical-align: middle;   font-size: 20px; }  .info {   text-align: center;   margin-top: 110px; } 	.owl-carousel-pdp .infoCell h4{   display: none; } .owl-carousel-pdp .infoCell img{   margin-top: 2.5rem; } .owl-carousel-pdp .infoCell{   text-align: center;   display: flex;   flex-direction: column; } .owl-carousel-pdp .infoCell div{   margin-top: 2rem; } .owl-carousel-pdp .infoCell div strong{   text-transform: uppercase;   display: inline;   background: #FFF; color: #000; 	line-height: 1.8; } .owl-carousel-pdp .infoCell div span{   display: block;   margin-top: 1rem; } </style> <script src="/~/media/scripts/owl-carousel/owl.carousel.min.js"></script> <script> $(document).ready(function(){ 	$("div.features-carousel-pdp").parents(".row.infoGrid").addClass("owl-carousel-pdp owl-theme tech-callout"); 	$('.owl-carousel-pdp').owlCarousel({ 		"margin":10, 		"loop":true, 		"dots": true, 		"nav": true, 		"responsiveClass" : true, 		"navText" : ['&lt;','&gt;'], 		"responsive": { 			0 : { 				"items": 1 				}, 			480 : { 				"items" : 2 				}, 			768 : { 				"items": 3 				}, 			1024 : { 				"items": 4 				} 		} 	}); }); </script></span></h4>
+                                        <img src="/~/media/Images/Dorel/Global%20Media%20Repositories/Marketing%20Content/Cannondale/Platform%20Extended%20Technology/MY17platform_TECH_ScalpelSi_CableHeadTube_C17_ScalpelFlatHT_51.ashx">
+                                        <div class="paddingTop10">
+                                            <strong>Clean cable management:</strong><br><br>Interchangeable in-head tube cable guides hold the housing securely and support every possible cable configuration.
+                                        </div>
+                                    </div></div><div class="owl-item"><div class="infoCell">
+                                        <h4>INTEGRATED DI2 BATTERY HOUSING<span class="techSD"></span></h4>
+                                        <img src="/~/media/Images/Dorel/Global%20Media%20Repositories/Marketing%20Content/Cannondale/Platform%20Extended%20Technology/MY17platform_TECH_ScalpelSi_Di2_C17_ScalpelDI2_14.ashx">
+                                        <div class="paddingTop10">
+                                            <strong>Integrated Di2 battery housing:</strong><br><br>Internal Top Tube Di2 battery holder. Easily accessible. Allows the use of stealth dropper post and Di2.
+                                        </div>
+                                    </div></div><div class="owl-item"><div class="infoCell">
+                                        <h4>MODERN XC GEOMETRY<span class="techSD"></span></h4>
+                                        <img src="/~/media/Images/Dorel/Global%20Media%20Repositories/Marketing%20Content/Cannondale/Platform%20Extended%20Technology/MY17platform_TECH_ScalpelSi_XCGeometry_C17_Scalpel_System.ashx">
+                                        <div class="paddingTop10">
+                                            <strong>Modern XC Geometry</strong><br><br>Short chainstays for traction and agility, slack head angle for stability at speed, tight 'Trail' measurement for nimble handling at slower speeds  - perfect for modern XC.
+                                        </div>
+                                    </div></div><div class="owl-item"><div class="infoCell">
+                                        <h4>Ultralight Carbon Link<span class="techSD"></span></h4>
+                                        <img src="/~/media/Images/Dorel/Global%20Media%20Repositories/Marketing%20Content/Cannondale/Platform%20Extended%20Technology/MY17platform_TECH_ScalpelSi_CarbonLinkPivots_C17_ScalpelLOCKR_25.ashx">
+                                        <div class="paddingTop10">
+                                            <strong>Ultra light weight - </strong><br><br>System Integrated cranks, fork, frame and Zero-Pivot stays all add up to a light-weight full suspension XC mountain bike.
+                                        </div>
+                                    </div></div></div></div><div class="owl-nav"><div class="owl-prev">&lt;</div><div class="owl-next">&gt;</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                </div>
+                <a id="anchorRider"></a>
+                <div id="riderBox">
+                    <div class="row butSet borderBottom">
+                        <div class="pull-left paddingLeft">
+                            <h3 class="dataSubhead">Rider Position / Bike Geometry</h3>
+                        </div>
+                        <div class="pull-right paddingRight">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row relative"> 
+                        <div class="col-lg-12">
+<img src="/~/media/Images/Dorel/Cannondale/Common/Geo%20Images/2018%20Geos/MY18_GEOS_SCALPEL-SI_S-XL.ashx" width="100%" height="auto">                        </div>
+                    </div>
+                </div>
+                <div class="row butSet noMobil">
+                    <div class="col-lg-6"><button class="butIcon email pull-right">send bike details to my email</button></div>
+                    <div class="col-lg-6"><button class="butIcon print pull-left">PRINT BIKE DETAILS</button></div>
+                </div>
+                <div class="row borderBottom paddingLeft">
+                    <button class="butClose ddLink" id="closeSpecs">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal emailpopup">
+    <div class="modal-dialog modal-lg modelautosize" style="width:auto;">
+        <h4>Email</h4>
+        <div class="emailerror" id="invalidEmail" style="display:none;">Please enter valid email</div>
+        <div class="emailsendmgs emailerror" id="sendMsg"></div>
+        <input id="txtEmail" type="text" required="" placeholder="Please enter your email address">
+        <br>
+        <input type="button" id="btnSendEmail" value="Send Mail" onclick="return SendMail();">
+        <br><br>
+    </div>
+</div>
+
+<div class="printcontent" style="display:none">
+
+</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.email').click(function () {
+                $('.emailpopup').dialog({
+                    autoOpen: false,
+                    width: '350',
+                    maxWidth: 950,
+                    height: 'auto',
+                    modal: true,
+                    fluid: true,
+                    resizable: true
+                });
+                $('.emailpopup').dialog('open');
+            });
+        });
+
+        function PrintDiv(data) {
+            var mywindow = window.open();
+            var is_chrome = Boolean(mywindow.chrome);
+            mywindow.document.write(data);
+
+            if (is_chrome) {
+                setTimeout(function () { // wait until all resources loaded 
+                    mywindow.document.close(); // necessary for IE >= 10
+                    mywindow.focus(); // necessary for IE >= 10
+                    mywindow.print();  // change window to winPrint
+                    mywindow.close();// change window to winPrint
+                }, 250);
+            }
+            else {
+                mywindow.document.close(); // necessary for IE >= 10
+                mywindow.focus(); // necessary for IE >= 10
+
+                mywindow.print();
+                mywindow.close();
+            }
+
+            return true;
+        }
+
+
+        function LoadPrintContent() {
+            $.ajax({
+                cache: false,
+                url: '/api/sitecore/Product/PrintBike' + "?id=6e1cca91-6f0b-4ed3-8be1-29fa08d113da&productsettingid=eccdc56f-7a06-4e0b-a9b8-e822ccc42409&culture=chr-Cher-US&sitelogoid=a90005c8-2bb6-43fe-a715-cf4f00a703f6&variantid=" + $('#hdVariantId').val(),
+                error: function (result) {
+                     //alert("Error occurred in LoadPrintContent method. Please try later!");
+                },
+                success: function (data) {
+                    $(".printcontent").html(data);
+                },
+                type: 'GET'
+            }); 
+        }
+        var timeClock;
+        function SendMail() {
+            $("#invalidEmail").hide();
+            $("#sendMsg").hide();
+            if ($("#txtEmail").val() == "" || !isValidEmailAddress($("#txtEmail").val())) {
+                $("#invalidEmail").show();
+                $("#sendMsg").hide();
+                return false;
+            }
+            $.blockUI();
+            $.ajax({
+                cache: false,
+                url: '/api/sitecore/Product/EmailBike' + "?email=" + $("#txtEmail").val() + "&Id=6e1cca91-6f0b-4ed3-8be1-29fa08d113da&productsettingid=eccdc56f-7a06-4e0b-a9b8-e822ccc42409&culture=chr-Cher-US&sitelogoid=a90005c8-2bb6-43fe-a715-cf4f00a703f6&variantid=" + $('#hdVariantId').val(),
+                error: function () {
+                    alert("Error occurred. Please try later!");
+                },
+                success: function (data) {
+                    $.unblockUI();
+                    $("#invalidEmail").hide();
+                    if (data.toLowerCase().indexOf("success") > -1) {
+                        $.blockUI({ message: "<div class='customGreen'><h3>" + data + "</h3></div>" });
+                    }
+                    else {
+                        $.blockUI({ message: "<div class='customRed'><h3>" + data + "</h3></div>" });
+                    }
+                    timeClock = window.setInterval(HideSendEmailMessage, 3000);
+                },
+                type: 'GET'
+            });
+
+            return false;
+        }
+        function HideSendEmailMessage() {
+            $.unblockUI();
+            $('.emailpopup').dialog('close');
+            window.clearInterval(timeClock);
+        }
+        /*$(function () {
+            LoadPrintContent();
+        });*/
+
+        $(document).on('click', 'button.print', function (event) {
+            //event.preventDefault();
+            LoadPrintContent();
+            $(".printcontent").find('#tdPrice').text($('.price').text());
+            $("#td360Image img").attr("src", $('.threesixty.active').find('img').eq(0).attr('src'));
+            PrintDiv($(".printcontent").html());
+        });
+
+    </script>
+
+
+
+
+    <div class="productFindDemo">
+        
+    </div>
+    <div class="boxWrap">
+        <div class="container">
+             
+        </div>
+    </div>
+
+      
+        
+    
+
+        
+<div class="boxWrap footerWrap" style="background-image: url(&quot;/~/media/Images/Dorel/Cannondale/Common/Footer%20BG/footer-landscape%20mtn.ashx&quot;); padding-top: 50px;">
+    <div class="footerOverlay">
+        <div class="container pageFooter">
+            <div class="row">
+                <!--@Html.Sitecore().Placeholder("phSiteLogo")-->
+
+            </div>
+            
+    <div class="row footerLinks">
+        <ul>
+                <li><a href="/en/International/Innovation">About Us<span class="buletAfter"></span> </a> </li>
+                <li><a href="/en/International/Advocacy">Advocacy<span class="buletAfter"></span> </a> </li>
+                <li><a href="/en/International/Safety-Notices-and-Recalls">Safety Notices &amp; Recalls<span class="buletAfter"></span> </a> </li>
+                <li><a href="/en/International/Safety">Safety<span class="buletAfter"></span> </a> </li>
+                <li><a href="/en/International/International%20Distributors">International Distributors<span class="buletAfter"></span> </a> </li>
+                <li><a href="http://www.dorelsports.com/careers/">Careers<span class="buletAfter"></span> </a> </li>
+        </ul>
+    </div>
+
+
+    <div class="row social">
+        <table width="100%" cellpadding="5" cellspacing="10" class="socialicon">
+            <tbody><tr>
+                            <td width1="20%">
+                                <div class="sharebtn">
+                                    <a class="mediaTwitter" href="http://twitter.com/#!/ridecannondale"></a>
+                                </div>
+                            </td>
+                            <td width1="20%">
+                                <div class="sharebtn">
+                                    <a class="mediaInstagram" href="https://instagram.com/ridecannondale"></a>
+                                </div>
+                            </td>
+                            <td width1="20%">
+                                <div class="sharebtn">
+                                    <a class="mediaFacebook" href="http://www.facebook.com/RideCannondale"></a>
+                                </div>
+                            </td>
+                            <td width1="20%">
+                                <div class="sharebtn">
+                                    <a class="mediaYouTube" href="https://www.youtube.com/user/CdaleBRAD"></a>
+                                </div>
+                            </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <div class="row footerSubinks">
+        <ul>
+                <li>© 2018</li>
+                <li>|</li>
+                            <li><a href="https://www.dorelsports.com/privacy-policy/">Privacy Policy<span class="buletAfter"></span> </a> </li>
+                <li><a href="https://www.dorelsports.com/terms-of-service/">Terms of Service<span class="buletAfter"></span> </a> </li>
+                <li><a href="https://www.dorelsports.com/cookie-policy/">Cookie Policy<span class="buletAfter"></span> </a> </li>
+        </ul>
+    </div>
+    <div class="row footerNote">
+        <p><script type="text/javascript"> $(document).ready(function() { $("h4").each(function() { if (this.innerText == "RIDER PROFILE") { $(this).parents(".row").remove(); } });     $(".cell").each(function(index) { var $elem = $(this); if ($elem.children("p").text().trim() === 'N/A') { $elem.remove(); } }); }); </script> <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> <script> $(document).ready(function() { document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";     $('a:contains("Newsletter")').click(function(event) { showMailingPopup();         event.preventDefault(); }); });  function showMailingPopup() { console.log("Showing Popup");     require(["mojo/signup-forms/Loader"], function(L) { L.start({ "baseUrl": "mc.us12.list-manage.com", "uuid": "8a7f980d7c69cece9eee36260", "lid": "1aeb10a0ae" }) });     document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;'; } </script> Cannondale reserves the right to make changes to information contained on this site at any time without notice, including with respect to prices, specifications, equipment, models, colors, and materials.</p>
+    </div>
+    <div id="videoOverlay">
+        <button class="ddClose videoClose"></button>
+        <div class="videoBox"></div>
+    </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="boxWrap stickFoot" style="width: 800px;">
+        <div class="container">
+            <div class="row">
+                <div class="pull-left favicon desktop-logo"></div>
+                
+        <script type="text/javascript">
+            $('#btnDecline').on('click', function () {                
+                Decline();
+            })
+
+            function Accept() {
+                $.ajax({
+                    url: '/api/sitecore/Navigation/AcceptCookie',
+                    type: 'GET',
+                    cache: false,
+                    success: function () {
+                        $('#CookieWin').addClass("hideCookie");
+                        $('html, body').removeAttr('style');
+                    },
+                    error: function (response) {
+                        alert(response.responseText)
+                    }
+                });
+                // $('#topNav').css('z-index', '8');
+            }
+
+            function Decline() {
+                $.ajax({
+                    url: '/api/sitecore/Navigation/DeclineCookie',
+                    type: 'GET',
+                    cache: false,
+                    success: function () {
+                        $('#CookieWin').addClass("hideCookie");
+                    },
+                    error: function (response) {
+                        alert(response.responseText)
+                    }
+                });
+                //$('#topNav').css('z-index', '8');
+            }
+        </script>
+
+
+
+                <div class="pull-left favicon ipad-logo"></div>
+                <div class="pull-right">
+                    <ul class="tools">
+                                <li id="liStikyFooterCompareToolPreview">
+                                </li>
+                                                <!--<li><a href="#" id="topLink"><span class="icon goTop"></span>Top</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+           //Commenting follwoing code to disable compare product functionality
+            /*$.ajax({
+                url: '/api/sitecore/Product/CompareProductsPreview?rhp=' + RegionHomePath,
+                cache: false,
+                error: function (response) {
+                    alert(response.responseText)
+                    //alert("Error occurred. Please try later!");
+                },
+                success: function (data) {
+                    compareToolLoaded = "1";
+                    $("#liStikyFooterCompareToolPreview").html(data);
+                    if ($.cookie("showct") == "1") {
+                        $("#ddCompareLink").trigger("click");
+                        $.cookie("showct", "");
+                    }
+                    SetAddProductLinks();
+                    var top = parseInt($.cookie("top"));
+                    if (top) $(document).scrollTop(top);
+                    SetCompareProductUrl();
+                },
+                type: 'GET'
+            });  */
+        });
+    })(jQuery);
+
+    function SetCompareProductUrl() {
+        $("#liStikyFooterCompareToolPreview img").each(function () {
+            var purl = $(this).attr("src");
+
+            var urlParts = purl.split('?');
+            if (urlParts.length > 2) {
+                purl = urlParts[0] + "?" + urlParts[1];
+                for (var i = 2; i < urlParts.length; i++) {
+                    purl = purl + "&" + urlParts[i];
+                }
+            }
+            $(this).attr("src", purl);
+        });
+    }
+</script>
+<script type="text/javascript">
+    function getLocationsupport() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(setPositionsupport);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function setPositionsupport(position) {
+        var lat = position.coords.latitude;
+        var lng = position.coords.longitude;
+        if (lat != '' && lng != '') {
+            var addsupport = $('#postalsupport').val();
+            var radiussupport = $('#radsupport').html();
+            var productsupport = $('#productsupport').html();
+            var lensupport = $('#lensupport').html();
+            window.location.href = "" + "?radius=" + radiussupport + "&len=" + lensupport + "&lat=" + lat + "&lng=" + lng + "&product=" + productsupport;
+        }
+    }
+    (function ($) {
+        $(document).ready(function () {
+            $('#fd1').click(function (event) {
+                var link1 = '';
+                var link2 = '';
+
+                if ((link1 == link2) || (link2.toString() == '')) {
+                        $.ajax({
+                            url: '/api/sitecore/Navigation/ReadCookies',
+                            type: 'GET',
+                            cache: false,
+                            success: function (data) {
+                                if(data.id == "00000000-0000-0000-0000-000000000000" || data.id == null)
+                                {
+                                    getLocationsupport();
+                                }
+                                else {
+                                    window.location.href = "" + "?id=" + data.id;
+                                }
+
+                            },
+                            error: function (response) {
+                                alert(response.responseText)
+                            }
+                        });
+                }
+                else {
+                    window.location.href = "";
+                }
+            });
+        });
+    })(jQuery);
+</script>
+<script type="text/javascript">
+    function RemoveProduct(pid) {
+        $.ajax({
+            url: '/api/sitecore/Product/CompareProductRemove?pid=' + pid,
+            error: function () {
+                alert("Erroc occurred. Please try later!");
+            },
+            success: function (data) {
+                if (data == 'True') {
+                    window.location.href = window.location.href.replace('#', '')
+                }
+            },
+            type: 'GET'
+        });
+    }
+    function RemoveProductFromPreview(pid) {
+        $.ajax({
+            url: '/api/sitecore/Product/CompareProductRemove?pid=' + pid,
+            cache: false,
+            error: function () {
+                alert("Erroc occurred. Please try later!");
+            },
+            success: function (data) {
+                if (data == 'True') {
+                    $.ajax({
+                        url: '/api/sitecore/Product/CompareProductsPreview?rhp=' + RegionHomePath,
+                        cache: false,
+                        error: function (response) {
+                            alert(response.responseText);
+                            //alert("Error occurred. Please try later !");
+                        },
+                        success: function (data) {
+                            $("#dCmpTlPreview").html($(data).find("#dCmpTlPreview").html());
+                            $("#compareCount").html($(data).find("#compareCount").html());
+                            RefreshSelectionProductForCompare();
+                            if ($("#compareTable").length > 0) {
+                                RefreshComparePage();
+                            }
+                            SetAddProductLinks();
+                        },
+                        type: 'GET'
+                    });
+                }
+            },
+            type: 'GET'
+        });
+    }
+    $(".butCompare").click(function () {
+        SetAddProductLinks();
+    });
+
+    function RefreshSelectionProductForCompare() {
+        $(".butCompare").each(function () {
+            var prodid = $(this).attr("prodid");
+            var html = $("#dCmpTlPreviewIDs").html();
+            if (typeof prodid !== 'undefined' && typeof html !== 'undefined') {
+                if ($(this).hasClass("selected") && html.indexOf(prodid) == -1) {
+                    $(this).removeClass("selected")
+                }
+            }
+        });
+
+        SetAddProductLinks();
+    }
+    function SetAddProductLinks() {
+        $(".hypAddBike").each(function () {
+            $(this).attr("href", ProductUrl.ProductGridUrl + "?id=" + CatalogBikesCategoryId);
+        });
+
+    }
+    RefreshSelectionProductForCompare();
+    SetAddProductLinks();
+</script>
+
+
+    </div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","872848339460340");fbq("set","agent","tmgoogletagmanager","872848339460340");fbq("track","PageView");</script>
+<script type="text/javascript" id="" src="//platform-api.sharethis.com/js/sharethis.js#property=5a3920a89d192f00137432da&amp;product=sop"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","179759582624241");fbq("set","agent","tmgoogletagmanager","179759582624241");fbq("track","ViewContent");</script>
+
+    
+    <script type="text/javascript" src="/Static/CSU/js/common.js"></script>
+    <script type="text/javascript" src="/Scripts/CSU/Product/Product.js"></script>
+    <div>
+        <!-- Twitter Code -->
+        <script async="">
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+        </script>
+        <!-- End Twitter Code -->       
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("a").on("touchstart",function(){
+                $(this).css("text-decoration","underline");
+            });
+            $("a").on("touchend",function(){
+                $(this).css("text-decoration","none");
+            });
+        });
+    </script>
+
+
+
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><div style="display: none; visibility: hidden;">
+<script src="https://acuityplatform.com/Adserver/pxlj/4890378754396164255?" type="text/javascript" async="null"></script>
+
+</div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.31849fd556d065e6364d2ceb2dcd1e60.html?origin=https%3A%2F%2Fwww.cannondale.com&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>

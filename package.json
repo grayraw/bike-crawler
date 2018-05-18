@@ -1,0 +1,17 @@
+{
+  "name": "bikes-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crawler": "^1.1.2",
+    "jsdom": "^11.9.0",
+    "puppeteer": "^1.3.0",
+    "safe-json-stringify": "^1.1.0"
+  }
+}
