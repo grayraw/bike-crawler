@@ -1,0 +1,28 @@
+{
+    "brand": "Cannondale",
+    "bikeFilters": {
+        "title": "h1.txtBlu",
+        "description": ".bikeDescription",
+        "driveTrain": "",
+        "fork": "h4:contains(Fork)+p",
+        "shock": "h4:contains(Shock)+p",
+        "brakes": "h4:contains(Brakes)+p",
+        "frame": "h4:contains(Frame)+p",
+        "rims": "h4:contains(Rims)+p",
+        "hubs": "h4:contains(Hubs)+p", 
+        "tires": "h4:contains(Tires)+p",
+        "spokes": "h4:contains(Spokes)+p",
+        "crank": "h4:contains(Crank)+p",
+        "frontDerailleur": "h4:contains(Front Derailleur)+p",
+        "backDerailleur": "h4:contains(Back Derailleur)+p",
+        "rearCogs": "h4:contains(Rear Cogs)+p",
+        "pedals": "h4:contains(Pedals)+p",
+        "shifters": "h4:contains(Shifters)+p",
+        "handlebar": "h4:contains(Handlebar)+p",
+        "stem": "h4:contains(Stem)+p",
+        "headset": "h4:contains(Headset)+p",
+        "brakeLevers": "h4:contains(Brake Levers)+p",
+        "saddle": "h4:contains(Saddle)+p",
+        "seatpost": "h4:contains(Seatpost)+p"
+    }
+}

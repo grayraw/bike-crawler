@@ -4,10 +4,33 @@ const fs = require('fs');
 const safeJsonStringify = require('safe-json-stringify');
 require('events').EventEmitter.defaultMaxListeners = 99;
 
-const startPage = 'https://www.cannondale.com/en/International';
-// const startPage = 'https://www.cannondale.com/en/International/Products/ProductCategory.aspx?nid=3cfe9447-598e-41c6-a8b4-5c0fe9196a80';
-const filters = ['[data-tab=Mountaintab] + .ddBox .col-xs-2 ul li a', '.viewProducts'];
-// const filters = ['.viewProducts'];
+//cannondale
+// const startPage = 'https://www.cannondale.com/en/International';
+// const filters = ['[data-tab=Mountaintab] + .ddBox .col-xs-2 ul li a', '.viewProducts'];
+
+//cube
+const startPage = 'https://www.cube.eu/en/2018/bikes/mountainbike/';
+const filters = ['.e-button.e-button-arrow-right', '#filter-items .item a'];
+
+//gt full
+const startPage = 'https://www.gtbicycles.com/int_en/bikes?cat=22&limit=36';
+const filters = ['.product-image'];
+
+//gt hard
+const startPage = 'https://www.gtbicycles.com/int_en/bikes?cat=24&limit=36';
+const filters = ['.product-image'];
+
+//trek
+const startPage = 'https://www.cube.eu/en/2018/bikes/mountainbike/';
+const filters = ['.e-button.e-button-arrow-right', '#filter-items .item a'];
+
+//merida
+const startPage = 'https://www.cube.eu/en/2018/bikes/mountainbike/';
+const filters = ['.e-button.e-button-arrow-right', '#filter-items .item a'];
+
+//giant
+const startPage = 'https://www.cube.eu/en/2018/bikes/mountainbike/';
+const filters = ['.e-button.e-button-arrow-right', '#filter-items .item a'];
 
 let browser;
 let page;
@@ -18,14 +41,14 @@ async function grabAPage(startPage, filters){
     // let pagesContent = [await page.content()];
   //   await page.screenshot({path: 'example.png'});
 
-    browser = await puppeteer.launch();
+    browser = await puppeteer.launch({headless: false});
     page = await browser.newPage();
     page.setJavaScriptEnabled(true);
     let pagesContent = await getContent([startPage]);
 
     let i = 0;
     while (i < filters.length){
-        // debugger;
+        
         let $pagesContent = pagesContent.map((page)=>{
             return cheerio.load(page);
         });
@@ -44,8 +67,19 @@ async function grabAPage(startPage, filters){
         i++;
     }
 
-    debugger;    
-    console.log('waiting');
+    fs.mkdir("cube", ()=>{
+        pagesContent.forEach((page, index)=>{
+            //safe each page on disk with a start page as folder;
+            fs.writeFile("cube/" + index + ".html", page, function(err) {
+                if(err) {
+                    return console.log(err);
+                }
+            
+                console.log("The " + index + ".html was saved!");
+            }); 
+        })
+    })
+
   
     // await browser.close();
 }
@@ -53,7 +87,7 @@ async function grabAPage(startPage, filters){
 async function getContent(links){
     let formattedLinks = filterLinks(links, startPage);
     // debugger;
-    formattedLinks = [formattedLinks[0]];
+    // formattedLinks = [formattedLinks[0]];
     let newContent = [];
     await Promise.all(formattedLinks.map(async (link)=>{
         const p = await browser.newPage();
@@ -91,7 +125,6 @@ function filterLinks(links, startPage){
     return filteredLinks;
 }
 
-console.log('started');
 grabAPage(startPage, filters);
 
 // console.log($('[data-tab=Mountaintab] + .ddBox .col-xs-2 ul').text());
